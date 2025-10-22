@@ -1,0 +1,2829 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+/* Place all @import rules below this line and above any other CSS */
+@media (max-width: 600px) {
+  .bacca-luce-description {
+    min-height: 340px !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+  width: 40vw !important;
+  max-width: 50vw !important;
+  }
+  .bacca-luce-can-box {
+    width: 96vw !important;
+    max-width: 80vw !important;
+    min-width: 0 !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .bacca-luce-buy-now {
+    margin-top: 0.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  .flavor-variety-btn {
+    font-size: 1.1rem !important;
+    padding: 0.6em 1.1em !important;
+    border-radius: 18px !important;
+    min-width: 0 !important;
+    width: auto !important;
+    max-width: 90vw !important;
+    margin: 0.7em auto 0 auto !important;
+    display: block !important;
+  }
+  .pop-open-the-party h2 {
+    font-size: 5rem !important;
+    max-width: 90vw;
+    word-break: break-word;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.1;
+    margin: 12px auto 0;
+    display: block;
+  }
+  .flavor-list {
+    display: flex !important;
+    flex-direction: row !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    -webkit-overflow-scrolling: touch;
+    gap: 1.2rem !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    padding-bottom: 1.2rem !important;
+    padding-left: 0 !important;
+    margin-top: 0.5rem !important;
+  }
+  .flavor-item {
+    min-width: 160px !important;
+    flex: 0 0 auto !important;
+  }
+  .flavor-title {
+    font-size: 4rem !important;
+    max-width: 90vw;
+    word-break: break-word;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.1;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+    .container .age-box .buttons {
+        flex-direction: column;
+    }
+    @media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .container .age-box .buttons {
+    display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+    gap: 0.7em;
+    width: 100%;
+  -ms-align-items: stretch;
+  align-items: stretch;
+    justify-content: center;
+    margin-top: 1em;
+  }
+  .container .age-box .btn {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    font-size: 1em;
+    padding: 0.8em 0.2em;
+    margin: 0;
+    text-align: center;
+  }
+  .container {
+    display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-align-items: center;
+  align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  .bela-logo-container {
+    width: 90vw;
+    max-width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .logo {
+    width: 90vw !important;
+    max-width: 220px !important;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .container .age-box {
+    width: 80vw !important;
+    max-width: 260px !important;
+    min-width: 140px !important;
+    margin: 6vw auto 0 auto !important;
+    padding: 1em 0.7em 1.2em 0.7em !important;
+    font-size: 0.95em !important;
+    border-radius: 14px !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06) !important;
+    text-align: center !important;
+    background: #f3eac0 !important;
+    display: block !important;
+  }
+}
+.bela-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+.bela-logo-container {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.logo {
+  width: 400px !important;
+  display: block;
+  margin: 0 auto;
+}
+.age-box {
+  margin-top: 0;
+  padding-bottom: 40px;
+}
+.age-box {
+  margin-top: 0;
+  padding-bottom: 40px;
+}
+/* Utility: position underage content at bottom of page */
+.underage-bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+/* Center underage content horizontally and vertically */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+/* Age box styling for visibility and spacing */
+.container .age-box {
+  background: #fff8f2;
+  border: none;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(129,31,140,0.08);
+  padding: 2rem 2.5rem 1.5rem 2.5rem;
+  margin-top: 0;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+}
+/* Remove border from age verification buttons */
+.age-box .btn {
+  border: none !important;
+}
+@media (max-width: 600px) {
+  .logo {
+    width: 600px !important;
+    max-width: 100vw;
+    margin: 0 auto;
+    display: block;
+  }
+  .container .age-box {
+    padding: 1.2rem 1rem 1rem 1rem;
+    max-width: 88vw;
+  }
+}
+@media (max-width: 600px) {
+  .flavor-grid {
+    flex-direction: column;
+    font-size: 1.2em;
+  }
+
+}
+.limonchello-buy-now .buy-now-button {
+  background: radial-gradient(circle at 50% 50%, #ffd700 12%, #f2de8c 88%) !important;
+  color: #f65e4a !important;
+  border: none;
+  box-shadow: 0 2px 8px rgba(255,215,0,0.15);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  border-radius: 24px;
+  padding: 0.7rem 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  transition: background 0.18s, color 0.18s, transform 0.15s;
+  cursor: pointer;
+}
+.limonchello-description-box {
+  color: #ff6d4d;
+  background: #ffdf5c;
+  border: 2px solid #fff;
+  border-radius: 18px;
+  box-shadow: none;
+  padding: 1.5rem 1.5rem 1.2rem 1.5rem;
+  margin-bottom: 0;
+  max-width: 100vw;
+  min-width: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 1.1rem;
+  gap: 0.5rem;
+}
+.saray-description-box {
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 18px;
+  box-shadow: none;
+  padding: 1.5rem 1.5rem 1.2rem 1.5rem;
+  margin-bottom: 0;
+  max-width: 420px;
+  min-width: 320px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 1.1rem;
+  gap: 0.5rem;
+}
+.saray-title {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.saray-details {
+  margin-top: -30rem;
+  z-index: 1;
+  position: relative;
+}
+.saray-left {
+  background: #f3eac0;
+  border-radius: 0;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 12px rgba(233,182,89,0.10);
+  margin-bottom: 0.2rem;
+}
+.saray-description-box {
+  background: #f3eac0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 1.5rem 1.5rem 1.2rem 1.5rem;
+  margin-bottom: 0;
+  max-width: 100vw;
+  min-width: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 1.1rem;
+  color: #c8a026;
+  gap: 0.5rem;
+}
+.passione-details > *:last-child {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+.add-flavors > *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+/* Flexbox layout for Passione row inner content */
+.passione-row-inner {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+    min-height: 60vh;
+    position: relative;
+  padding: 1.5rem 1.5rem 1.2rem 1.5rem;
+  margin-bottom: 0;
+  max-width: 420px;
+  min-width: 320px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 1.1rem;
+  color: #811f8c;
+  gap: 0.5rem;
+}
+.passione-description-box h3,
+.passione-description-box .ingredients-title,
+.passione-description-box .AlC,
+.passione-description-box .ingredients-list {
+  color: #811f8c;
+}
+/* Remove gap between Passione top section and Add Flavors section */
+.passione-details + .add-flavors {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+/* Passione page layout and style to match Bacca Luce, scoped to .passione-details */
+.passione-details {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  display: block;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 2.5rem 2vw 0 2vw;
+  position: relative;
+  z-index: 10;
+  margin-top: -30rem;
+  margin-bottom: 0 !important;
+}
+.passione-row {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  background: #811f8c;
+  border-radius: 0;
+  box-shadow: 0 2px 12px rgba(129,31,140,0.10);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 2.5rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100vw;
+  min-width: 100vw;
+  max-width: 100vw;
+  padding: 2.5rem 0 0 0;
+  padding-bottom: 0 !important;
+  margin: 0 !important;
+  margin-bottom: 0 !important;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+}
+.passione-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 600px;
+  max-width: 900px;
+  width: 100%;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  margin: 0 auto;
+}
+.passione-can-box {
+  display: block;
+  width: 100vw;
+  height: max-content;
+  border-radius: 18px;
+  max-width: 900px;
+  min-width: 600px;
+  margin: 0 auto 0 auto;
+}
+
+.passione-buy-now {
+  margin-bottom: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.passione-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+    min-width: 0;
+  max-width: 380px;
+    margin-right: 4vw;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+.passione-title {
+  text-align: center !important;
+  margin-top: 0;
+      margin-top: auto;
+      margin-bottom: auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      position: relative;
+}
+.passione-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #fb9f11;
+}
+.passione-description {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+  color: #fb9f11;
+}
+.passione-details .ingredients-title,
+.passione-details .AlC,
+.passione-details .ingredients-list {
+  color: #fb9f11;
+}
+.passione-nutrition-facts img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+/* Passione top section styles */
+.passione-details {
+  color: #fb9f11;
+}
+.passione-details h1,
+.passione-details h3,
+.passione-details .ingredients-title,
+.passione-details .AlC,
+.passione-details .ingredients-list {
+  color: #fb9f11;
+}
+.passione-left {
+  background: #811f8c;
+  border-radius: 24px;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 12px rgba(129,31,140,0.10);
+  margin-bottom: 0.2rem;
+}
+.passione-can-box {
+  display: block;
+  width: 100vw;
+  height: max-content;
+  border-radius: 18px;
+  max-width: 900px;
+  min-width: 600px;
+  margin: 0 auto 1.5rem auto;
+}
+/* Bacca Luce ADD button on Passione page */
+.add-flavors-list .add-flavor-btn.bacca-luce-add {
+  background: radial-gradient(circle at 50% 50%, #e5748c 12%, #d81d4a 88%) !important;
+  color: #ffa98e !important;
+  border: none;
+  box-shadow: 0 2px 8px rgba(216,29,74,0.15);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  border-radius: 24px;
+  padding: 0.7rem 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  transition: background 0.18s, color 0.18s, transform 0.15s;
+  cursor: pointer;
+}
+.passione-buy-now .buy-now-button {
+  background: radial-gradient(circle at 50% 50%, #f461a4 12%, #611c84 88%) !important;
+  color: #ffa98e !important;
+  border: none;
+  box-shadow: 0 2px 8px rgba(97,28,132,0.15);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  border-radius: 24px;
+  padding: 0.7rem 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  transition: background 0.18s, color 0.18s, transform 0.15s;
+  cursor: pointer;
+}
+add-flavors-list .add-flavor-btn.tangelo-add {
+  background: radial-gradient(circle at 50% 50%, #ff6d4d 12%, #f3eac0 88%) !important;
+  color: #f3eac0 !important;
+  border: none;
+  box-shadow: 0 2px 8px rgba(255,109,77,0.15);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  transition: background 0.18s, color 0.18s, transform 0.15s;
+}
+/* Limonchello ADD button with radial center color (center: #ffd700, outer: #f2de8c) */
+.add-flavors-list .add-flavor-btn.limonchello-add {
+  background: radial-gradient(circle at 50% 50%, #ffd700 12%, #f2de8c 88%) !important;
+  color: #f65e4a !important;
+  border: none;
+  box-shadow: 0 2px 8px rgba(255,215,0,0.15);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  transition: background 0.18s, color 0.18s, transform 0.15s;
+}
+
+/* Saray ADD button with radial center color (center: #e9b659, outer: #f3eac0) */
+.add-flavors-list .add-flavor-btn.saray-add {
+  background: radial-gradient(circle at 50% 50%, #f3eac0 12%, #e9b659 88%) !important;
+  color: #c8a026 !important;
+}
+
+.saray-buy-now .buy-now-button {
+  background: radial-gradient(circle at 50% 50%, #f3eac0 12%, #e9b659 88%) !important;
+  color: #c8a026 !important;
+  border: none;
+  box-shadow: 0 2px 8px rgba(233,182,89,0.15);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  border-radius: 24px;
+  padding: 0.7rem 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  transition: background 0.18s, color 0.18s, transform 0.15s;
+  cursor: pointer;
+}
+
+/* Passione ADD button with radial center color (less middle, more outer) */
+.add-flavors-list .add-flavor-btn.passione-add {
+  background: radial-gradient(circle at 50% 50%, #f461a4 12%, #611c84 88%) !important;
+  color: #ffa98e !important;
+  border: none;
+  box-shadow: 0 2px 8px rgba(97,28,132,0.15);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  transition: background 0.18s, color 0.18s, transform 0.15s;
+}
+@media (max-width: 600px) {
+  .flavor-list {
+    display: flex !important;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    gap: 1.2rem;
+    width: 100vw;
+    max-width: 100vw;
+    padding-bottom: 1.2rem;
+  }
+  .flavor-item {
+    min-width: 160px;
+    flex: 0 0 auto;
+  }
+}
+.add-flavors {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  background: linear-gradient(90deg,
+    #811f8c 0%,
+    #f3eac0 33%,
+    #ffdf5c 66%,
+    #f65e4a 100%
+  );
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-top: 0;
+  padding-bottom: 0.7rem;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  z-index: 1;
+  margin-top: -14rem !important;
+}
+p.add-flavors-list,
+.add-flavors-list {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  line-height: 1 !important;
+}
+p.add-flavors-list {
+  padding-left: 2vw;
+  padding-right: 4vw;
+}
+.add-flavors-list {
+  margin-top: 0 !important;
+}
+p.add-flavors-list,
+.add-flavors-description {
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  line-height: 1 !important;
+}
+p.add-flavors-list,
+.add-flavors-description {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+  line-height: 1 !important;
+}
+/* Remove margin from the add-flavors-list intro paragraph to eliminate gap */
+p.add-flavors-list {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+  display: contents !important;
+}
+/* Tighter stacking for Add Flavors section headings and descriptions */
+.add-flavors-title {
+  margin-bottom: 0.2em !important;
+}
+.add-flavors-description {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+.add-flavors-list {
+  margin-top: 0 !important;
+  margin-bottom: 0.2em !important;
+  padding-top: 0 !important;
+}
+/* Reduce paragraph spacing in Add Flavors section only */
+.add-flavors p {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+/* Add Flavors Section Gradient Background */
+/* Pick Your Flavor Section Links & Button */
+.flavor-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #93489c;
+  margin-right: -58px;
+  margin-bottom: 0.1rem;
+  letter-spacing: 0.05em;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  white-space: nowrap;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: color 0.18s, background 0.18s;
+  display: inline-block;
+  text-align: left;
+  position: relative;
+  z-index: 2;
+}
+.bacca-luce-flavor:hover { background: #b4214e; color: #ffb3c6; }
+.passione-flavor:hover { background: #811f8c; color: #fb9f11; }
+.saray-flavor:hover { background: #f3eac0; color: #c8a026; }
+.limonchello-flavor:hover { background: #ffdf5c; color: #ff6d4d; }
+.tangelo-flavor:hover { background: #f65e4a; color: #f3eac0; 
+}
+.bacca-luce-glass-link img:hover,
+.passione-glass-link img:hover,
+.saray-glass-link img:hover,
+.limonchello-glass-link img:hover,
+.tangelo-glass-link img:hover {
+  transform: scale(1.15);
+  transition: transform 0.2s;
+  z-index: 2;
+}
+.flavor-variety-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+  width: 100vw;
+}
+.flavor-variety-btn {
+  background: #93489c;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 32px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: background 0.18s, color 0.18s, transform 0.15s;
+  display: inline-block;
+}
+.flavor-variety-btn:hover {
+  background: #c8a026;
+  color: #fffbe6;
+  transform: scale(1.04);
+}
+/* Footer Section */
+.footer-section {
+  background: #ffdf5c;
+  color: #ff6d4d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 24px 0 10px 0; /* Make footer background a bit smaller */
+  flex-direction: column;
+  -ms-flex-direction: column;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  gap: 18px;
+}
+.footer-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5rem;
+  font-weight: 700;
+  color: #ff6d4d;
+  margin-bottom: 10px;
+  letter-spacing: 1.5px;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  gap: 20px; /* Reduce gap between footer links */
+  justify-content: center;
+  margin-bottom: 18px;
+}
+.footer-link {
+  color: #ff6d4d;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem; /* Make footer links smaller to match info links */
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.18s;
+}
+.footer-link:hover {
+  color: #fff;
+  text-shadow: #777 0 0 8px;
+  text-decoration: underline;
+}
+.footer-copyright {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem; /* Make copyright line smaller */
+  color: #ff6d4d;
+  margin-top: 2px; /* Reduce space between Sitemap and copyright */
+  opacity: 0.85;
+  text-align: center;
+}
+/* Information Section */
+.info-section {
+  background: #ff6d4d;
+  color: #f3eac0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 140px;
+  padding: 30px 0 20px 0;
+}
+.info-content {
+  display: flex;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  align-items: center;
+  gap: 8px; /* Reduce gap between information and Contact Us */
+  font-size: 1rem; /* Make information text even smaller */
+}
+.info-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.2rem; /* Make information title smaller */
+  font-weight: 700;
+  color: #f3eac0;
+  margin-bottom: 10px;
+  letter-spacing: 1.5px;
+}
+.info-links {
+  display: flex;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  gap: 18px;
+  justify-content: center;
+}
+.info-link {
+  color: #f3eac0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.18s;
+}
+.info-link:hover {
+  color: #fff;
+  text-shadow: #777 0 0 8px;
+  text-decoration: underline;
+}
+html, body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100vw;
+  box-sizing: border-box;
+}
+/* Follow Us Section */
+.follow-us-section {
+  background: #b4214e;
+  color: #ffa98e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  width: 100%;
+  padding: 32px 0 24px 0; /* Add vertical padding for better centering */
+}
+.follow-us-content {
+  display: flex;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  align-items: center;
+  gap: 22px; /* Slightly more space between text and icons */
+}
+.follow-us-icons {
+  display: flex;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  gap: 32px;
+  justify-content: center;
+  margin-top: -20px; /* Lower icons a bit for better centering */
+  margin-bottom: 18px;
+}
+.follow-us-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #ffa98e;
+  margin-right: 24px;
+  letter-spacing: 2px;
+  margin-top: 1.2em;
+}
+.follow-icon img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.10));
+  transition: transform 0.18s;
+}
+.follow-icon img:hover {
+  transform: scale(1.12);
+}
+.our-story-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px; /* Slightly larger background */
+  background: #f3eac0;
+  padding: 0;
+}
+.our-story-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100%;
+  transition: transform 0.2s;
+}
+.our-story-icon img {
+  width: 100vw;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.our-story-icon:hover {
+  transform: scale(1.03);
+}
+.corsiva-uppercase {
+  font-family: "Monotype Corsiva", cursive, serif;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.letteria-lowercase {
+  font-family: "Letteria Pro", cursive, serif;
+  font-size: 1em;
+  font-weight: normal;
+}
+.our-story-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10rem;
+  font-weight: 700;
+  color: #c8a026;
+  margin: 0;
+}
+.bacca-luce-flavor {
+  color: #ffa98e;
+}
+.passione-flavor {
+  color: #fb9f11;
+}
+.saray-flavor {
+  color: #c8a026;
+}
+.limonchello-flavor {
+  color: #ff6d4d;
+}
+.tangelo-flavor {
+  color: #f3eac0;
+}
+.flavor-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0;
+}
+/* Make all glass images bigger regardless of container */
+img[src*="Bela-Glasses/"] {
+  width: 300px !important;
+  height: auto !important;
+  transition: width 0.3s ease;
+}
+/* Glass images bigger and inline */
+.glass-list {
+  display: flex;
+  flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+.glass-list img {
+  width: 180px;
+  height: auto;
+  transition: width 0.3s ease;
+  z-index: 1;
+}
+.flavor-list {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: end;
+  padding-left: 2rem;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+/* Make Pick Your Flavor bigger and use Montserrat font */
+.flavor-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 7rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+@font-face {
+    font-family: "Monotype Corsiva";
+    src: url("Monotype-Corsiva-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Letteria Pro";
+    src: url("Letteria-Pro-Script-Regular.ttf") format("truetype");
+}
+@media (max-width: 600px) {
+  .age-box {
+    padding-bottom: 30px;
+    max-height: 250px;
+    height: auto;
+    max-width: 400px;
+    width: 90vw;
+    position: relative;
+    border-radius: 20px;
+    background-color: #f3eac0;
+    z-index: 2;
+    margin-top: 32px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 2px dashed black;
+    animation: fadeInUp 0.6s ease-out;
+    margin-bottom: 0;
+    overflow-y: auto;
+  }
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+    width: 100%;
+  }
+  .btn {
+    font-size: 1em;
+    padding: 12px 0;
+    width: 90vw;
+    max-width: 320px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .btn {
+    font-size: 0.9em;
+    padding: 10px 16px;
+  }
+.age-box{
+  padding-bottom: 30px;
+  max-height: 250px;
+  height: auto;
+  max-width: 400px;
+  width: 90vw;
+  position: relative;
+  border-radius: 20px;
+  background-color: #f3eac0;
+  z-index: 2;
+  margin-top: 0;
+  padding-bottom: 40px;
+    box-shadow: 0   0   10px rgba(0, 0, 0, 0.2);
+    border: 2px dashed black;
+    animation: fadeInUp 0.6s ease-out;
+    margin-bottom: 0;
+    margin-top: 0;
+    overflow-y: auto;
+}
+.custom-corsiva{
+    font-family: "Monotype Corsiva", sans-serif;
+}
+.custom-letteria{
+    font-family: "Letteria Pro", sans-serif;
+}
+:root{
+    --base-color: #f3eac0;
+    --text-color: #c8a026;
+    --primary-color: #B3214e;
+    --secondary-color: #811f8c;
+    --color-1: #ffdf5c;
+    --color-2: #f65e4a;
+    --color-3: #f3eac0;
+}
+html{
+    font-family: 'Montserrat';
+}
+body{
+    background: linear-gradient(to right,
+    #B3214e 0%,
+    #811f8c 25%,
+    #f3eac0 50%,
+    #ffdf5c 75%,
+    #f65e4a 100%
+    );
+    padding: 0;
+    width: 100vw;
+    text-align: center;
+    font-family: 'Montserrat';
+    background-position: center;
+    position: relative;
+    z-index: 0;
+}
+bela-header {
+  text-align: center;
+  padding: 60px 0;
+  background-color: #fff;
+}
+.prompt{
+    font-size: 1.5em;
+    font-family: 'Montserrat','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+    color: #333;
+}
+.subtext{
+    font-size: 0.9em;
+    color: #777;
+}
+.background{
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  padding-top: 0;
+    padding-bottom: 40px;
+    min-height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+/* Allow specific background sections (like the FAQ page) to show elements
+   that intentionally overlap the top/bottom of the viewport. This prevents
+   the parent `.background` from clipping children on pages that need overlap. */
+.background.faq-bg {
+  overflow: visible;
+}
+
+/* Make sure the FAQ section/content sits above decorative elements like the
+   glitter overlay but below site chrome (logo) if needed. Adjust z-index as
+   necessary. */
+.faq-main-section,
+.faq-content {
+  position: relative;
+  z-index: 3;
+}
+
+/* Ensure the FAQ main section can overlap the header/top and extend past
+   the parent's bottom as intended. The section uses a negative top margin
+   in the HTML inline styles; this rule provides a consistent fallback so
+   the layout behaves if the inline style is removed or overridden. */
+.faq-main-section {
+  width: 100vw;
+  margin-top: -6rem; /* reduced overlap so the logo has breathing room */
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+}
+
+/* Reduce the negative overlap on small screens so content isn't cut off */
+@media (max-width: 800px) {
+  .faq-main-section {
+    margin-top: -2rem;
+  }
+}
+
+/* On small phones, remove overlap so the logo and FAQ have clear spacing */
+@media (max-width: 600px) {
+  .faq-main-section {
+    margin-top: 2rem; /* positive margin to create gap under logo on small screens */
+    padding-top: 1rem;
+  }
+  .faq-content {
+    padding: 1.5rem 1.25rem; /* slightly tighter padding for small screens */
+    width: 92vw;
+  }
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    
+}
+.btn{
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    max-width: 300px;
+    width: 100vw;
+    border: 1px solid black;
+}
+.yes{
+    background-color: #ff6d4d;
+    color: white;
+}
+.yes:hover{
+    background: linear-gradient(#ff85c1, #ff69b4);
+    box-shadow:  0 0 15px rgba(255, 105, 180, 0.5);
+}
+.no{
+    background-color: #93489c;
+    color: white;
+}
+.no:hover{
+    background-color: #bbb;
+}
+.btn:hover{
+    box-shadow:  0 0 10px rgba(255, 255, 255, 0.3);
+}
+.two-line-text {
+  display: block;
+  overflow: visible;
+  text-overflow: unset;
+  white-space: normal;
+  width: 98vw;
+  max-width: none;
+  margin-right: 0;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  border-radius: 20px;
+  background-color: #f3eac0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 16px 24px;
+ animation: fadeInUp 0.6s ease-out;
+ justify-content: left;
+ color: #c8a026;
+}
+.glitter {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.3;
+  pointer-events: none;
+}
+/* Ensure the two-line-text sits above the glitter and centers its content */
+.two-line-text {
+  position: relative;
+  z-index: 9999 !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;    /* horizontal centering of children */
+  justify-content: center;/* vertical centering inside the box */
+  text-align: center;     /* center inline text */
+}
+.flex-row-top {
+  display: flex;
+  align-items: flex-start;      /* Align items to the top */
+  justify-content: space-between; /* Push text left, mascot right */
+  gap: 60px;                     /* Space between text and mascot */
+  width: 100vw;
+  max-width: 1100px;         /* Remove max-width restriction from flex container */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;       /* Move flex row closer to the top */
+}
+.underage-bg {
+  overflow: visible !important;
+  padding-bottom: 0 !important;
+  min-height: 100vh;
+}
+nav {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  align-items: flex-end;   /* Aligns items to the right */
+  gap: 1em;                /* Adds spacing between links */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav a {
+  text-decoration: none;
+  color: var(--secondary-color); /* Or any color you prefer */
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+nav a:hover {
+  text-decoration: underline;
+  color: var(--secondary-color);
+}
+nav {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  z-index: 10;
+}
+.dropdown-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown > a {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--text-color);
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  background-color: var(--secondary-color);
+  border-radius: 0.5em;
+  padding: 0.5em 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.dropdown-content li {
+  list-style: none;
+  margin: 0;
+}
+.dropdown-content a {
+  display: block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  color: var(--text-color);
+}
+.dropdown-content a:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+.bela-drink-can {
+  position: relative;
+  max-width: 600px;
+  width: 80vw;
+  margin: 0;
+  animation: fadeInUp 0.6s ease-out;
+  z-index: 1;
+}
+.home-bg {
+    min-height: 100vh;
+    height: auto;
+    overflow-y: visible !important;
+    overflow-x: hidden;
+    padding-top: 0;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}
+.home-scroll {
+  overflow-y: auto !important;   /* Enable vertical scroll */
+  overflow-x: hidden !important;
+  min-height: 100vh !important;
+  height: auto !important;
+  padding-top: 0 !important;
+  padding-bottom: 60px !important;
+  box-sizing: border-box;
+}
+.home-scroll .bela-drink-can {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  display: block;
+  max-width: 900px;
+  width: 95vw;
+  height: auto;
+  object-fit: contain;
+}
+body.home-page {
+  overflow-y: auto !important;
+  height: auto !important;
+}
+.background.home-bg.home-scroll {
+  overflow-y: auto !important;
+  height: auto !important;
+}
+body.age-page {
+  overflow: hidden !important;   /* No scroll bar */
+  height: 100vh !important;
+}
+.background.age-bg {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  justify-content: center;      /* Vertically center content */
+  align-items: center;
+  overflow: hidden !important;  /* No scroll bar */
+}
+.flex-row-top {
+  display: flex;
+  align-items: center;          /* Vertically center mascot with text */
+  justify-content: space-between;
+  width: 90vw;
+  max-width: 1300px;
+  margin-top: -50px;
+  gap: 60px;
+}
+.two-line-text {
+  text-align: left;             /* Left-align text */
+  width: 65vw;
+  max-width: 800px;
+  padding: 24px;
+  box-sizing: border-box;
+}
+body.underage-page {
+  display: flex;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: flex-start;
+  position: relative;
+}
+/* Underage page: bring content closer to the logo and remove bottom pinning */
+body.underage-page .container {
+  min-height: auto !important;
+  justify-content: flex-start !important;
+}
+body.underage-page .bela-logo-container {
+  margin-top: 12px !important;
+  margin-bottom: 8px !important;
+}
+body.underage-page .underage-bottom {
+  position: static !important;
+  bottom: auto !important;
+  margin-top: 8px !important;
+  gap: 20px !important;
+}
+body.underage-page .two-line-text {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+@media (max-width: 600px) {
+  body.underage-page .underage-bottom {
+    flex-direction: column !important;
+    -ms-flex-direction: column !important;
+    align-items: center !important;
+    gap: 12px !important;
+  }
+  body.underage-page .two-line-text {
+    width: 88vw !important;
+    max-width: 88vw !important;
+    text-align: center !important;
+    font-size: 1.25rem !important;
+  }
+}
+/* Tighten spacing at top of underage content */
+body.underage-page .flex-row-top {
+  width: 80vw;
+  max-width: 900px;
+  margin-top: 20px !important;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+body.underage-page .two-line-text {
+  width: 50vw;
+  max-width: 500px;
+  padding: 12px 24px;
+  font-size: 1.6rem;
+}
+body.underage-page .logo {
+  z-index: 2; /* Ensure logo is above age-box but below text/mascot if needed */
+}
+.background.home-bg.home-scroll .bela-drink-can {
+  /* Default behavior (mobile-first) is no negative offset; desktop override below */
+  margin-top: 0 !important;
+}
+
+@media (min-width: 1100px) {
+  .background.home-bg.home-scroll .bela-drink-can {
+    margin-top: -96px !important; /* move can higher on wide screens only */
+  }
+}
+.pop-open-the-party {
+  /* pull the heading closer to the cans (responsive via vw so it scales on mobile) */
+  margin-top: -6vw; /* negative vw pulls up on large screens, scales down on smaller screens */
+  margin-bottom: -1.2vw; /* reduce space below the heading so following cans move up */
+  text-align: center;
+  color: #c8a026;
+}
+.pop-open-the-party h2 {
+  font-size: 5rem; /* Make the heading much bigger */
+  display: block;
+  margin: 8px auto 0  auto;
+  line-height: 1.1;
+  display: inline-block;
+}
+.corsiva-uppercase {
+  font-family: "Monotype Corsiva", cursive;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  font-size: inherit; /* Inherit from h2 */
+}
+.letteria-lowercase {
+  font-family: "Letteria Pro", cursive;
+  font-weight: normal;
+  font-size: inherit; /* Inherit from h2 */
+}
+.pop-open-the-party .cta-button {
+  display: block;      /* Each button on its own line */
+  margin: 18px auto 0; /* Space between buttons */
+  max-width: 220px;
+}
+/* Default flavor section background */
+.flavor-section {
+  position: relative;
+  background-color: rgba(147, 72, 156, 0.8); /* fallback, overridden by flavor-specific classes */
+  background-image: url('bela-pattern-fixed.png');
+  background-repeat: repeat;
+  background-size: auto;
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  color: #c8a026;
+}
+/* Bacca Luce section solid background override */
+.bacca-luce-bg {
+  background: #b4214e !important;
+  background-image: none !important;
+}
+.bacca-luce-can-box {
+  width: 60vw;
+  height: auto;
+  border-radius: 18px;
+  max-width: 420px;
+  min-width: 220px;
+  display: block;
+  margin-bottom: 0;
+}
+.bacca-luce-details {
+  display: flex;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  background: #b4214e;
+  padding: 3rem 2vw;
+  width: 100vw;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+  margin-top: 0;
+  padding-top: 48px; /* Clean, positive spacing above section */
+}
+.bacca-luce-title {
+  text-align: center;
+  width: 100%;
+  color: #ffa98e;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  margin: 0 0 0 0;
+  padding-bottom: 1.2rem;
+  letter-spacing: 1px;
+}
+.bacca-luce-row {
+  display: flex;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1vw;
+  width: 100%;
+  flex-wrap: nowrap;
+  min-height: 10vh;
+}
+/* Reduce gap above and below the ALC line in Bacca Luce info box */
+.bacca-luce-desc-text .AlC {
+  margin-top: 0.2em;
+  margin-bottom: 0;
+  line-height: 1;
+  padding: 0;
+}
+.bacca-luce-left {
+  display: flex;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  align-items: center;
+  width: 28vw;
+  min-width: 400px;
+  max-width: 900px;
+  justify-content: flex-start;
+}
+.bacca-luce-info {
+  display: flex;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-width: 520px;
+  max-width: 900px;
+  width: 60vw;
+  margin-right: 0;
+  color: #ffa98e;
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+  gap: 2vw;
+}
+.bacca-luce-description {
+  border: 2px solid #ffa98e;
+  border-radius: 18px;
+  padding: 0.3rem 0.3rem;
+  background: none;
+  min-width: 220px;
+  max-width: 420px;
+  width: 26vw;
+  box-sizing: border-box;
+  min-height: 220px;
+  height: 26vw;
+  display: flex;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  gap: 0px;
+  overflow: auto;
+  word-break: break-word;
+  padding: 0 0.3rem;
+}
+.bacca-luce-desc-text {
+  display: flex;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0px;
+  flex: 1 1 0;
+}
+.bacca-luce-logo {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 0 96px 0; /* About 1 inch below logo */
+  z-index: 10;
+  position: relative;
+}
+.bacca-luce-nutrition-facts {
+  width: 700px;
+  max-width: 800px;
+  min-width: 400px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+  align-self: flex-start;
+}
+.bacca-luce-nutrition-facts img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+}
+.buy-now-button {
+  display: inline-block;
+  background: linear-gradient(90deg, rgba(216,29,74,0.8) 0%, rgba(229,116,140,0.8) 50%, rgba(216,29,74,0.8) 100%);
+  color: #ffa98e;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.9rem 2.2rem;
+  border: none;
+  border-radius: 32px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.18s, color 0.18s, transform 0.15s;
+  margin-top: 1.2rem;
+}
+.buy-now-button:hover {
+  background: linear-gradient(90deg, rgba(229,116,140,0.8) 0%, rgba(216,29,74,0.8) 50%, rgba(229,116,140,0.8) 100%);
+  color: #ffa98e;
+  transform: scale(1.06);
+}
+.bacca-luce-buy-now {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  /* margin removed for perfect centering */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+/* Add Flavors Section: align all columns and buttons to bottom */
+.add-flavors-list {
+  display: flex;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0;
+  align-items: flex-end; /* align all columns to bottom */
+  justify-content: space-between;
+  margin-top: 0 !important;
+  width: 100vw;
+  max-width: 100vw;
+  min-height: 420px; /* more height for bigger logos */
+  box-sizing: border-box;
+  padding-left: 2vw;
+}
+.add-flavors-list .add-flavor-row {
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.add-flavor-row {
+  display: flex;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.7rem;
+  min-width: 180px;
+  max-width: 220px;
+  height: 340px; /* fixed height for all columns */
+  box-sizing: border-box;
+  position: relative;
+}
+.flavor-row-top {
+  display: flex;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.05rem;
+  width: 100%;
+}
+.add-flavor-row .flavor-link {
+  align-self: flex-end;
+  margin-bottom: 0;
+}
+.add-flavor-row .flavor-logo {
+  align-self: flex-start;
+}
+.add-flavor-row .add-flavor-btn {
+  margin-left: 0;
+  margin-top: auto;
+  align-self: center;
+  width: 80%;
+  max-width: 140px;
+  min-width: 80px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.add-flavors-list .flavor-link {
+  margin-right: 0;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #93489c;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: color 0.18s, background 0.18s;
+  display: inline-block;
+  text-align: left;
+  position: relative;
+  z-index: 2;
+}
+
+.add-flavors-list .flavor-logo {
+  width: 200px !important;
+  height: 200px !important;
+  min-width: 200px !important;
+  min-height: 200px !important;
+  max-width: 220px !important;
+  max-height: 220px !important;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.add-flavors-list .add-flavor-btn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  margin-left: 1.2rem;
+  background: #eee;
+  color: #333;
+  transition: background 0.18s, color 0.18s, transform 0.15s;
+}
+.add-flavors-list .bacca-luce-flavor {
+  color: #ffa98e;
+}
+.add-flavors-list .passione-flavor {
+  color: #fb9f11;
+}
+.add-flavors-list .saray-flavor {
+  color: #c8a026;
+}
+.add-flavors-list .limonchello-flavor {
+  color: #ff6d4d;
+}
+.add-flavors-list .tangelo-flavor {
+  color: #f3eac0;
+  justify-content: center;
+}
+.bacca-luce-left,
+.bacca-luce-nutrition-facts,
+.bacca-luce-info {
+  flex: 1 1 0;
+  max-width: 33.33%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+@media (max-width: 600px) {
+  .bacca-luce-row {
+    flex-direction: column !important;
+    -ms-flex-direction: column !important;
+    align-items: center !important;
+    gap: 1.5rem !important;
+  }
+  .bacca-luce-left,
+  .bacca-luce-nutrition-facts,
+  .bacca-luce-info {
+    max-width: 95vw !important;
+    min-width: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    margin: 0 auto !important;
+  }
+  .bacca-luce-nutrition-facts {
+    justify-content: center !important;
+    align-items: center !important;
+    margin-bottom: 0.5rem !important;
+  }
+  .bacca-luce-logo {
+    margin-top: 1.2rem !important;
+    margin-bottom: 1.2rem !important;
+  }
+  .bacca-luce-info {
+  font-size: 0.7em !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+  margin-top: 3.5rem !important;
+  margin-bottom: 3.5rem !important;
+  }
+  .bacca-luce-description {
+    width: 90vw !important;
+    max-width: 95vw !important;
+    min-width: 0 !important;
+    font-size: 1.15em !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+    display: flex !important;
+  }
+  .bacca-luce-desc-text {
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+}
+@media (max-width: 600px) {
+  .bacca-luce-row {
+    flex-direction: column !important;
+    -ms-flex-direction: column !important;
+    align-items: center !important;
+    gap: 1.5rem !important;
+  }
+  .bacca-luce-left,
+  .bacca-luce-nutrition-facts,
+  .bacca-luce-info {
+    max-width: 95vw !important;
+    min-width: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box;
+    margin: 0 auto !important;
+  }
+  .bacca-luce-nutrition-facts {
+    justify-content: center !important;
+    align-items: center !important;
+    margin-bottom: 0.5rem !important;
+  }
+  .bacca-luce-logo {
+    margin-top: 1.2rem !important;
+    margin-bottom: 1.2rem !important;
+  }
+}
+/* Passione section solid background override */
+.passione-bg {
+  background: #811f8c !important;
+  background-image: none !important;
+}
+/* Ensure Passione Buy Now button uses correct style even if container class is .bacca-luce-buy-now */
+.passione-bg .bacca-luce-buy-now .buy-now-button {
+  background: radial-gradient(circle at 50% 50%, #f461a4 12%, #611c84 88%) !important;
+  color: #ffa98e !important;
+  border: none;
+  box-shadow: 0 2px 8px rgba(97,28,132,0.15);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  border-radius: 24px;
+  padding: 0.7rem 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  transition: background 0.18s, color 0.18s, transform 0.15s;
+  cursor: pointer;
+}
+/* Passione section unified with Bacca Luce layout */
+.passione-bg {
+  background: #811f8c !important;
+  background-image: none !important;
+}
+.passione-logo {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 0 96px 0;
+  z-index: 10;
+  position: relative;
+}
+.passione-title {
+  text-align: center;
+  width: 100%;
+  color: #fb9f11 !important;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  margin: 0 0 0 0;
+  padding-bottom: 1.2rem;
+  letter-spacing: 1px;
+}
+.passione-row {
+  display: flex;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1vw;
+  width: 100%;
+  flex-wrap: nowrap;
+  min-height: 10vh;
+}
+.passione-left {
+  display: flex;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  align-items: center;
+  width: 28vw;
+  min-width: 400px;
+  max-width: 900px;
+  justify-content: flex-start;
+}
+.passione-can-box {
+  width: 60vw;
+  height: auto;
+  border-radius: 18px;
+  max-width: 420px;
+  min-width: 220px;
+  display: block;
+  margin-bottom: 0;
+}
+.passione-nutrition-facts {
+  width: 700px;
+  max-width: 800px;
+  min-width: 400px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+  align-self: flex-start;
+}
+.passione-nutrition-facts img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+}
+.passione-info {
+  display: flex;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-width: 520px;
+  max-width: 900px;
+  width: 60vw;
+  margin-right: 0;
+  color: #fb9f11 !important;
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+  gap: 2vw;
+}
+.passione-description {
+  border: 2px solid #fb9f11;
+  border-radius: 18px;
+  padding: 0.3rem 0.3rem;
+  background: none;
+  min-width: 220px;
+  max-width: 420px;
+  width: 26vw;
+  box-sizing: border-box;
+  min-height: 220px;
+  height: 26vw;
+  display: flex;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  gap: 0px;
+  overflow: auto;
+  word-break: break-word;
+  padding: 0 0.3rem;
+  color: #fb9f11 !important;
+}
+.passione-desc-text {
+  display: flex;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0px;
+  flex: 1 1 0;
+  color: #fb9f11 !important;
+}
+.passione-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #fb9f11 !important;
+}
+.passione-buy-now {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  color: #fb9f11 !important;
+}
+@media (max-width: 600px) {
+  .passione-description {
+    min-height: 340px !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    width: 40vw !important;
+    max-width: 50vw !important;
+  }
+  .passione-can-box {
+    width: 96vw !important;
+    max-width: 80vw !important;
+    min-width: 0 !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .passione-buy-now {
+    margin-top: 0.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+}
+/* Force all text in Passione section to correct color, regardless of class */
+.passione-bg, .passione-bg * {
+  color: #fb9f11 !important;
+}
+.passione-bg .bacca-luce-buy-now .buy-now-button:hover {
+  background: radial-gradient(circle at 50% 50%, #611c84 12%, #f461a4 88%) !important;
+  color: #ffa98e !important;
+  transform: scale(1.06);
+}
+/* Tangelo section unified with Bacca Luce/Passione layout */
+.tangelo-bg {
+  background: #ff6d4d !important;
+  background-image: none !important;
+}
+.tangelo-bg, .tangelo-bg * {
+  color: #f3eac0 !important;
+}
+.tangelo-bg .bacca-luce-buy-now .buy-now-button {
+  background: radial-gradient(circle at 50% 50%, #f3eac0 12%, #ff6d4d 88%) !important;
+  color: #ff6d4d !important;
+  border: none;
+  box-shadow: 0 2px 8px rgba(255,109,77,0.15);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  border-radius: 24px;
+  padding: 0.7rem 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  transition: background 0.18s, color 0.18s, transform 0.15s;
+  cursor: pointer;
+}
+.tangelo-bg .bacca-luce-buy-now .buy-now-button:hover {
+  background: radial-gradient(circle at 50% 50%, #ff6d4d 12%, #f3eac0 88%) !important;
+  color: #f3eac0 !important;
+  transform: scale(1.06);
+}
+/* Saray section unified with Bacca Luce/Passione layout */
+.saray-bg {
+  background: #f3eac0 !important;
+  background-image: none !important;
+}
+.saray-bg, .saray-bg * {
+  color: #c8a026 !important;
+}
+.saray-bg .bacca-luce-buy-now .buy-now-button {
+  background: radial-gradient(circle at 50% 50%, #f3eac0 12%, #e9b659 88%) !important;
+  color: #c8a026 !important;
+  border: none;
+  box-shadow: 0 2px 8px rgba(233,182,89,0.15);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  border-radius: 24px;
+  padding: 0.7rem 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  transition: background 0.18s, color 0.18s, transform 0.15s;
+  cursor: pointer;
+}
+.saray-bg .bacca-luce-buy-now .buy-now-button:hover {
+  background: radial-gradient(circle at 50% 50%, #e9b659 12%, #f3eac0 88%) !important;
+  color: #e9b659 !important;
+  transform: scale(1.06);
+}
+/* Limonchello section unified with others */
+.limonchello-bg {
+  background: #ffdf5c !important;
+  background-image: none !important;
+}
+.limonchello-bg, .limonchello-bg * {
+  color: #f65e4a !important;
+}
+.limonchello-bg .bacca-luce-buy-now .buy-now-button {
+  background: radial-gradient(circle at 50% 50%, #ffd700 12%, #f2de8c 88%) !important;
+  color: #f65e4a !important;
+  border: none;
+  box-shadow: 0 2px 8px rgba(255,215,0,0.15);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  border-radius: 24px;
+  padding: 0.7rem 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  transition: background 0.18s, color 0.18s, transform 0.15s;
+  cursor: pointer;
+}
+.limonchello-bg .bacca-luce-buy-now .buy-now-button:hover {
+  background: radial-gradient(circle at 50% 50%, #f2de8c 12%, #ffd700 88%) !important;
+  color: #ffd700 !important;
+  transform: scale(1.06);
+}
+/* Our Story main section layout */
+.our-story-main-section {
+  margin-top: -8rem; /* reduced overlap so the header/logo has breathing room */
+  width: 100vw;
+  min-height: 640px;
+  background: #f3eac0;
+  box-shadow: 0 2px 12px rgba(233,182,89,0.10);
+  border-radius: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+/* Our Story content container for centering */
+.our-story-content {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+/* Our Story page inner background container */
+.our-story-bg-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.glitter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: auto;
+  z-index: 1;
+  pointer-events: none;
+}
+/* Our Story main column (can and heading) */
+.our-story-main-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 520px;
+}
+.pop-open-the-party {
+  text-align: center;
+  margin: 3.5rem 0 0.5rem 0;
+  width: 100%;
+  align-self: flex-start;
+}
+.pop-open-the-party h2 {
+  font-size: 5rem;
+  display: inline-block;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.1;
+  padding-top: 0;
+  padding-bottom: 0;
+  gap: 0;
+  width: auto;
+}
+.corsiva-uppercase {
+  margin-top: 0;
+}
+.bela-can-design-v {
+  max-width: 800px;
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Info box moved from inline styles in HTML */
+.our-story-info-box {
+  background: radial-gradient(circle at 50% 50%, #f3eac0 12%, #e9b659 88%);
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(233,182,89,0.10);
+  padding: 2.2rem 2.2rem 1.5rem 2.2rem;
+  max-width: 320px;
+  min-width: 160px;
+  color: #b3214e;
+  font-size: 1.05rem;
+  text-align: center;
+  border: 2px solid #f3eac0;
+  margin-left: 1.5rem;
+}
+.our-story-info-box h2{margin-top:0;margin-bottom:1rem;font-size:2rem;color:#c8a026}
+.our-story-info-box p{color:#c8a026;line-height:1.5;margin-bottom:0}
+
+/* Responsive: stack columns on smaller screens and reduce overlap */
+@media (max-width: 1100px) {
+  .our-story-main-section { padding: 2rem; }
+  .our-story-content { max-width: 1000px; gap: 1.5rem; }
+  .our-story-main-col { width: 420px; }
+  .our-story-info-box { margin-left: 1rem; max-width: 300px; }
+}
+@media (max-width: 800px) {
+  .our-story-main-section {
+    /* pull the main section up a bit more so it's closer to the header on phones */
+    margin-top: -7rem !important;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Stack and center the content so it's not left-heavy on small screens */
+  .our-story-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    text-align: center;
+    max-width: 85vw;
+    margin: 0 auto;
+  }
+  /* Center the main column's children (heading + image) */
+  .our-story-main-col {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  /* make the info box centered and not flush-left on small screens */
+  .our-story-info-box { 
+    width: 100% !important; 
+    margin: 0 auto !important;
+    padding: 1.8rem 1.2rem !important;
+    box-sizing: border-box;
+  }
+  .pop-open-the-party { 
+    margin: 1.5rem auto 0.5rem;
+    width: 100%;
+    text-align: center;
+  }
+  .pop-open-the-party h2 { font-size: 2.8rem; text-align: center; }
+  .bela-can-design-v { 
+    max-width: 340px; 
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* Reduce the large hero/background height on small screens so it doesn't
+     push the main section too far down. This lets us use a smaller negative
+     margin to pull the section up without overlapping the logo. */
+  .background.our-story-bg {
+    min-height: 45vh !important;
+    padding-bottom: 0.5rem !important;
+  }
+}
+@media (max-width: 480px) {
+  .our-story-main-section { padding: 1rem; }
+  .pop-open-the-party h2 { 
+    font-size: 2.2rem;
+    line-height: 1.2;
+  }
+  .our-story-info-box { 
+    padding: 1.5rem 1.2rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
+
+/* Specific tweaks for narrow phones (360px viewport) */
+@media (max-width: 360px) {
+  .our-story-content {
+    max-width: 90vw;
+  }
+  .our-story-info-box {
+    padding: 1.2rem 1rem 1.2rem 2.5rem !important;
+  }
+  .bela-can-design-v {
+    max-width: 300px;
+  }
+  .pop-open-the-party h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Horizontal nav for home page */
+.horizontal-nav {
+  width: 100vw;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  position: relative;
+  z-index: 100;
+  pointer-events: auto;
+}
+.horizontal-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  list-style: none;
+  padding: 0.5rem 0 0.5rem 0;
+  margin: 0;
+}
+.horizontal-menu li a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #811f8c;
+  text-decoration: none;
+  padding: 0.3em 0.7em;
+  border-radius: 8px;
+  transition: background 0.18s, color 0.18s;
+}
+.horizontal-menu li a:hover {
+  background: #f3eac0;
+  color: #b4214e;
+}
+/* hamburger default: hidden on regular/desktop views */
+#hamburger {
+  display: none;
+}
+@media (max-width: 700px) {
+  /* Mobile: use hamburger overlay instead of permanent pill scroller to avoid cutting content */
+  .horizontal-nav {
+    margin-bottom: 0.5rem;
+    position: relative;
+    z-index: 1000;
+    background: transparent; /* keep transparent */
+    box-shadow: none;
+    padding: 0.2rem 0.6rem;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* move hamburger to the right */
+    gap: 0.5rem;
+  }
+
+  /* hamburger button (only visible on small screens) */
+  #hamburger {
+    display: inline-block;
+    background: transparent;
+    border: 0;
+    font-size: 1.6rem;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+    color: #811f8c;
+    margin-right: 12px;
+  }
+
+  /* change color when menu is open */
+  header.open #hamburger { color: #ffffff; }
+
+  /* Hide the pill scroll by default on small screens; menu will open as overlay */
+  .horizontal-menu { display: none; }
+
+  /* overlay menu when header.open */
+  header.open .horizontal-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.78);
+    padding-top: 3.25rem; /* space for hamburger/close */
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.1rem;
+    z-index: 120;
+    overflow-y: auto;
+  }
+
+  header.open .horizontal-menu li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  header.open .horizontal-menu li a {
+    background: #fff;
+    color: #2a2a2a;
+    padding: 0.9rem 2rem;
+    border-radius: 999px;
+    font-size: 1.05rem;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    width: auto;
+  }
+
+  /* prevent page scroll while menu open */
+  body.menu-open { overflow: hidden; }
+
+  /* Ensure hero/can doesn't overlap header area on mobile */
+  .background.home-bg.home-scroll .bela-drink-can {
+    margin-top: 0 !important; /* reset large negative offset */
+    max-width: 88vw !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Add subtle spacing so topmost links are not hidden by logo/hero */
+  body.home-page .background.home-bg.home-scroll { padding-top: 1.6rem; }
+}
+/* Add inner padding for privacy policy text */
+.privacy-policy-box > div {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+@media (max-width: 600px) {
+  .privacy-policy-box > div {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+}
+/* Privacy Policy Box Styles */
+.privacy-policy-box {
+  background: rgba(180,33,78,0.88);
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(233,182,89,0.10);
+  padding: 2.8rem 2.8rem 2rem 2.8rem;
+  color: #ffa98e;
+  font-size: 1.08em;
+  text-align: left;
+  border: 2px solid #f3eac0;
+  margin: 0.5rem auto 0 auto;
+  max-width: 1920px;
+  min-width: 620px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1000px) {
+  .privacy-policy-box {
+    max-width: 98vw;
+    min-width: 0;
+    padding: 2.2rem 1.5rem 1.5rem 1.5rem;
+    font-size: 1em;
+  }
+}
+@media (max-width: 600px) {
+  .privacy-policy-box {
+    max-width: 99vw;
+    min-width: 0;
+    padding: 1.2rem 0.7rem 1.2rem 0.7rem;
+    font-size: 0.98em;
+    border-radius: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .privacy-policy-box {
+    padding: 0.8rem 0.3rem 1rem 0.3rem;
+    font-size: 0.95em;
+    border-radius: 8px;
+  }
+}
+@media (max-width: 360px) {
+  .privacy-policy-box {
+    padding: 0.5rem 0.1rem 0.7rem 0.1rem;
+    font-size: 0.92em;
+    border-radius: 6px;
+  }
+}
+@media (min-width: 701px) {
+  .horizontal-menu {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    background: transparent;
+    padding: 0.5rem 0;
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .horizontal-menu li {
+    width: auto;
+    display: block;
+    justify-content: initial;
+  }
+
+  .horizontal-menu li a {
+    background: transparent;
+    color: #811f8c;
+    padding: 0.3em 0.7em;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    box-shadow: none;
+  }
+
+  #hamburger {
+    display: none;
+  }
+}
+.horizontal-menu {
+  transition: all 0.3s ease-in-out;
+}
+@media( max-width: 700px) {
+  #hamburger {
+    position: fixed;
+    top: 1rem;
+    z-index: 110;
+  }
+}
+.send-message-button:hover {
+  transform: scale(1.03);
+  background: linear-gradient(90deg, rgba(229,116,140,1) 0%, rgba(216,29,74,1) 100%);
+  color: #ffffff;
+}
+.send-message-button {
+  display: inline-block;
+  background: linear-gradient(90deg, rgba(216,29,74,0.8) 0%, rgba(229,116,140,0.8) 50%, rgba(216,29,74,0.8) 100%);
+  color: #ffa98e;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.9rem 2.2rem;
+  border: none;
+  border-radius: 32px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.18s, color 0.18s, transform 0.15s;
+  margin-top: 1.2rem;
+  width: 100%;
+}
+.send-message-button:hover {
+  transform: scale(1.03);
+  background: linear-gradient(90deg, rgba(229,116,140,1) 0%, rgba(216,29,74,1) 100%);
+  color: #ffffff;
+}
+/* Base styles */
+.sitemap-section {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(255,255,255,0.8);
+  border: 2px solid #fb9f11;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  backdrop-filter: blur(6px);
+  font-family: 'Montserrat', sans-serif;
+  color: #ffdf5c;
+  
+}
+/* Grid layout for desktop */
+.sitemap-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 0.8rem;
+  column-gap: 1rem;
+}
+
+/* Link styling */
+.sitemap-section li {
+  margin: 0;
+  padding: 0;
+}
+
+.sitemap-section a {
+  display: block;
+  color: #ffa98e;
+  text-decoration: underline;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+@media (max-width: 420px) {
+  .sitemap-section {
+    width: 100%;
+    max-width: 280px;
+    margin: 1rem auto;
+    padding: 0.8rem;
+    box-sizing: border-box;
+    border-radius: 12px;
+  }
+
+  .sitemap-section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    text-align: center;
+  }
+
+  .sitemap-section ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .sitemap-section li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .sitemap-section a {
+    font-size: 0.95rem;
+    line-height: 1.3;
+    word-break: break-word;
+  }
+}
+/* Hide toggle on desktop */
+.sitemap-toggle-button {
+  display: none;
+}
+
+/* Mobile-only styles */
+@media (max-width: 480px) {
+  .sitemap-toggle-button {
+    display: block;
+    margin: 0 auto 1rem auto;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background: #fb9f11;
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .sitemap-list.collapsed {
+    display: none;
+  }
+
+  .sitemap-list.expanded {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+  }
+}
+@media (max-width: 480px) {
+  .terms-section {
+    width: 90%;
+    max-width: 320px;
+    margin: 1rem auto;
+    padding: 1rem;
+    box-sizing: border-box;
+    background: rgba(255,255,255,0.8);
+    border-radius: 12px;
+  }
+
+  .terms-section h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .terms-section h3 {
+    font-size: 1.1rem;
+    margin-top: 1.2rem;
+  }
+
+  .terms-section p,
+  .terms-section li {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .terms-section ul {
+    padding-left: 1rem;
+  }
+
+  .terms-section a {
+    word-break: break-word;
+    font-size: 0.95rem;
+  }
+
+  header {
+    padding: 1.5rem 0;
+  }
+
+  .bela-logo-container img {
+    max-width: 220px;
+  }
+
+  .glitter {
+    opacity: 0.15;
+  }
+}
+#scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  background-color: #fb9f11;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 0.6rem 0.8rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  display: none;
+}
+#scrollTopBtn:hover {
+  background-color: #ffa98e;
+}
+#scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  background-color: #fb9f11;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 0.6rem 0.8rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  display: none;
+}
+#scrollTopBtn:hover {
+  background-color: #ffa98e;
+}
+.trademarks-section {
+  max-width: 800px;
+  margin: 1rem auto 3rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px solid #fb9f11;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(6px);
+}
+.map-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  border: 2px solid #fb9f11;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
