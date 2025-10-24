@@ -42,6 +42,15 @@
     margin-bottom: 2rem;
     display: block;
   }
+  @media screen and (max-width: 768px) {
+  .pop-open-the-party {
+    margin-bottom: 1rem !important;
+  }
+
+  .flavor-section {
+    padding-top: 0.5rem !important;
+  }
+}
   .flavor-list {
     display: flex !important;
     flex-direction: row !important;
@@ -2836,4 +2845,5 @@ body.underage-page .logo {
   width: 80%;
   border-radius: 2px;
 }
+
 
