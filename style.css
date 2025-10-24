@@ -39,6 +39,7 @@
     text-align: center;
     line-height: 1.1;
     margin: 12px auto 0;
+    margin-bottom: 2rem;
     display: block;
   }
   .flavor-list {
@@ -52,7 +53,7 @@
     max-width: 100vw !important;
     padding-bottom: 1.2rem !important;
     padding-left: 0 !important;
-    margin-top: 0.5rem !important;
+    margin-top: 2.5rem !important;
   }
   .flavor-item {
     min-width: 160px !important;
@@ -2835,3 +2836,4 @@ body.underage-page .logo {
   width: 80%;
   border-radius: 2px;
 }
+
