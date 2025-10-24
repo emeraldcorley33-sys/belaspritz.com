@@ -267,5 +267,22 @@
       }));
     })();
   </script>
+  <!-- Scroll to Top Button -->
+<button onclick="scrollToTop()" id="scrollTopBtn" title="Back to top">↑</button>
+  <script>
+  window.onscroll = function() {
+    const btn = document.getElementById("scrollTopBtn");
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
 </body>
 </html>
+
