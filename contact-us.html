@@ -125,20 +125,62 @@
         <a href="do-not-sell-my-personal-info.html" class="info-link">Do Not Sell My Personal Info</a>
       </div>
     </div>
-  </section>
-  <section class="footer-section">
-    <div class="footer-content">
-      <div class="footer-links">
-        <a href="terms-and-conditions.html" class="footer-link">Terms & Conditions</a>
-  <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
-        <a href="trademarks.html" class="footer-link">Trademarks</a>
-        <a href="sitemap.html" class="footer-link">Sitemap</a>
-      </div>
-<div class="footer-copyright">
-        &copy; 2025 Belá. All rights reserved.
-      </div>
+<!-- Shared Sections -->
+<section class="our-story-section">
+  <a href="our-story.html" class="our-story-icon">
+    <img src="our-story-icon.png" alt="Our Story" />
+  </a>
+</section>
+
+<section class="follow-us-section">
+  <div class="follow-us-content">
+    <span class="follow-us-title">Follow Us</span>
+    <div class="follow-us-icons">
+      <a href="https://facebook.com" class="follow-icon" target="_blank" rel="noopener">
+        <img src="facebook-icon.png" alt="Facebook" />
+      </a>
+      <a href="https://instagram.com" class="follow-icon" target="_blank" rel="noopener">
+        <img src="instagram-icon.png" alt="Instagram" />
+      </a>
     </div>
-  </section>
+  </div>
+</section>
+
+<section class="info-section">
+  <div class="info-content">
+    <span class="info-title">Information</span>
+    <div class="info-links">
+      <!-- Only include Contact Us if not on contact-us.html -->
+      <a href="where-to-buy.html" class="info-link">Where to Buy</a>
+      <a href="do-not-sell-my-personal-info.html" class="info-link">Do Not Sell My Personal Info</a>
+    </div>
+  </div>
+</section>
+
+<section class="footer-section">
+  <div class="footer-content">
+    <div class="footer-links">
+      <a href="terms-and-conditions.html" class="footer-link">Terms & Conditions</a>
+      <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+      <a href="trademarks.html" class="footer-link">Trademarks</a>
+      <a href="sitemap.html" class="footer-link">Sitemap</a>
+    </div>
+    <div class="footer-copyright">
+      &copy; 2025 Belá Beverage Co., Tempe Az. All rights reserved.
+    </div>
+  </div>
+</section>
+  <script>
+  const currentPage = window.location.pathname;
+  if (!currentPage.includes("contact-us.html")) {
+    const infoLinks = document.querySelector(".info-links");
+    const contactLink = document.createElement("a");
+    contactLink.href = "contact-us.html";
+    contactLink.className = "info-link";
+    contactLink.textContent = "Contact Us";
+    infoLinks.prepend(contactLink);
+  }
+</script>
   <script>
   const hamburger = document.getElementById('hamburger');
   const header = document.querySelector('header');
@@ -164,3 +206,4 @@
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 </script>
+
