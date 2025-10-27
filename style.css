@@ -2864,6 +2864,31 @@ body.underage-page .logo {
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
+.coming-soon-banner {
+  background: linear-gradient(90deg, #fb9f11, #ff6ec7);
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 1rem 0;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  border-top: 4px solid #ffdf5c;
+  border-bottom: 4px solid #ffdf5c;
+  position: relative;
+  z-index: 999;
+}
+
+.coming-soon-banner marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: pulseGlow 1.5s infinite alternate;
+}
+
+@keyframes pulseGlow {
+  0% { text-shadow: 0 0 6px #fff, 0 0 12px #fb9f11; }
+  100% { text-shadow: 0 0 10px #fff, 0 0 20px #ff6ec7; }
+}
 
 
 
