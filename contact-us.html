@@ -127,7 +127,7 @@
     <img src="our-story-icon.png" alt="Our Story" />
   </a>
 </section>
-  
+<div>
 <section class="follow-us-section">
   <div class="follow-us-content">
     <span class="follow-us-title">Follow Us</span>
@@ -139,6 +139,7 @@
         <img src="instagram-icon.png" alt="Instagram" />
       </a>
     </div>
+  </div>
 </section>
 
 <section class="info-section">
@@ -149,6 +150,7 @@
       <a href="where-to-buy.html" class="info-link">Where to Buy</a>
       <a href="do-not-sell-my-personal-info.html" class="info-link">Do Not Sell My Personal Info</a>
     </div>
+  </div>
 </section>
 
 <section class="footer-section">
@@ -164,19 +166,6 @@
     </div>
   </div>
 </section>
-</section>
-
-  <script>
-  const currentPage = window.location.pathname;
-  if (!currentPage.includes("contact-us.html")) {
-    const infoLinks = document.querySelector(".info-links");
-    const contactLink = document.createElement("a");
-    contactLink.href = "contact-us.html";
-    contactLink.className = "info-link";
-    contactLink.textContent = "Contact Us";
-    infoLinks.prepend(contactLink);
-  }
-</script>
   <script>
   const hamburger = document.getElementById('hamburger');
   const header = document.querySelector('header');
@@ -202,18 +191,6 @@
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 </script>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
