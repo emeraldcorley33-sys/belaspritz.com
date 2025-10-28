@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Belá Flavors</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body class="flavors-page">
-  <header>
+  <header class="site-header" style="text-align:center; padding:2rem 0;">
     <nav class="horizontal-nav">
       <button id="hamburger" class="hamburger" aria-controls="site-menu" aria-expanded="false" aria-label="Open menu">☰</button>
       <ul id="site-menu" class="horizontal-menu">
@@ -19,82 +19,10 @@
         <li><a href="faq.html">FAQ</a></li>
       </ul>
     </nav>
-      <script>
-    (function(){
-      const hamburger = document.getElementById('hamburger');
-      const header = document.querySelector('header');
-      const menu = document.getElementById('site-menu');
-      if (!hamburger || !menu) return;
-
-      function setClosedState() {
-        hamburger.setAttribute('aria-expanded', 'false');
-        hamburger.textContent = '☰';
-        hamburger.setAttribute('aria-label', 'Open menu');
-      }
-      function setOpenState() {
-        hamburger.setAttribute('aria-expanded', 'true');
-        hamburger.textContent = '✕';
-        hamburger.setAttribute('aria-label', 'Close menu');
-      }
-
-      // initialize
-      setClosedState();
-
-      hamburger.addEventListener('click', function(){
-        const expanded = this.getAttribute('aria-expanded') === 'true';
-        if (expanded) {
-          setClosedState();
-        } else {
-          setOpenState();
-        }
-        header.classList.toggle('open');
-        document.body.classList.toggle('menu-open');
-      });
-
-      // Close menu when a link is clicked (mobile)
-      menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-        header.classList.remove('open');
-        document.body.classList.remove('menu-open');
-        setClosedState();
-      }));
-    })();
-    /* Default: hide menu on mobile */
-.horizontal-menu {
-  display: none;
-  flex-direction: column;
-  background-color: white;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  z-index: 999;
-}
-
-/* When header has .open, show the menu */
-header.open .horizontal-menu {
-  display: flex;
-}
-  </script>
-  <!-- Scroll to Top Button -->
-<button onclick="scrollToTop()" id="scrollTopBtn" title="Back to top">↑</button>
-  <script>
-  window.onscroll = function() {
-    const btn = document.getElementById("scrollTopBtn");
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-      btn.style.display = "block";
-    } else {
-      btn.style.display = "none";
-    }
-  };
-
-  function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-</script>
     <div class="bela-logo-container">
-      <img src="bela-text-logo.png" alt="Belá Logo" class="logo" />
+      <img src="bela-text-logo.png" alt="Belá Logo" class="logo" style="max-width:280px; height:auto;" />
     </div>
-    <img src="glitter.png" alt="Glitter Overlay" class="glitter" />
+    <img src="glitter.png" alt="Glitter Overlay" class="glitter" style="width:100%; height:auto; opacity:0.18;" />
   </header>
 
   <!-- Bacca Luce Section -->
@@ -358,14 +286,3 @@ header.open .horizontal-menu {
 </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
