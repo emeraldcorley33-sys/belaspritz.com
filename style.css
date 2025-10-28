@@ -2524,6 +2524,52 @@ body.underage-page .logo {
   /* Add subtle spacing so topmost links are not hidden by logo/hero */
   body.home-page .background.home-bg.home-scroll { padding-top: 1.6rem; }
 }
+.privacy-policy-box {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: rgba(255,255,255,0.8); /* transparent white */
+  border: 2px solid #fb9f11; /* Passione border */
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(6px);
+  font-family: 'Montserrat', sans-serif;
+  color: #ffa98e; /* Bacca Luce text */
+  line-height: 1.7;
+}
+
+/* Headings inside the box */
+.privacy-policy-box h2,
+.privacy-policy-box h3 {
+  color: #fb9f11; /* Passione highlight */
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Paragraphs and lists */
+.privacy-policy-box p,
+.privacy-policy-box ul {
+  font-size: 1rem;
+  color: #ffa98e;
+}
+
+/* Email link */
+.privacy-policy-box a {
+  color: #ffdf5c;
+  text-decoration: underline;
+}
+
+/* List styling */
+.privacy-policy-box ul {
+  padding-left: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.privacy-policy-box li {
+  margin-bottom: 0.5rem;
+}
 /* Add inner padding for privacy policy text */
 .privacy-policy-box > div {
   padding-left: 1em;
@@ -2534,21 +2580,6 @@ body.underage-page .logo {
     padding-left: 0.5em;
     padding-right: 0.5em;
   }
-}
-/* Privacy Policy Box Styles */
-.privacy-policy-box {
-  background: rgba(180,33,78,0.88);
-  border-radius: 18px;
-  box-shadow: 0 2px 12px rgba(233,182,89,0.10);
-  padding: 2.8rem 2.8rem 2rem 2.8rem;
-  color: #ffa98e;
-  font-size: 1.08em;
-  text-align: left;
-  border: 2px solid #f3eac0;
-  margin: 0.5rem auto 0 auto;
-  max-width: 1920px;
-  min-width: 620px;
-  box-sizing: border-box;
 }
 @media (max-width: 1000px) {
   .privacy-policy-box {
@@ -2916,8 +2947,7 @@ body.underage-page .logo {
 @keyframes pulseGlow {
   0% { text-shadow: 0 0 6px #fff, 0 0 12px #fb9f11; }
   100% { text-shadow: 0 0 10px #fff, 0 0 20px #ff6ec7; }
-}
-
+}}
 
 
 
