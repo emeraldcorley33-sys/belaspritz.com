@@ -2597,9 +2597,34 @@ body.underage-page .logo {
     display: block;
     justify-content: initial;
   }
+  .horizontal-menu li:nth-child(1) a {
+  color: #f3eac0; /* Bacca Luce - Home */
+}
+
+.horizontal-menu li:nth-child(2) a {
+  color: #fb9f11; /* Passione - Sipper Swag */
+}
+
+.horizontal-menu li:nth-child(3) a {
+  color: #d4af37; /* Saray - Our Story */
+}
+
+.horizontal-menu li:nth-child(4) a {
+  color: #f65e4a; /* Limonchello - Contact Us */
+}
+
+.horizontal-menu li:nth-child(5) a {
+  color: #ffa98e; /* Tangelo - FAQ */
+}
+
+/* Optional: Add hover sparkle */
+.horizontal-menu li a:hover {
+  text-shadow: 0 0 8px rgba(255,255,255,0.6);
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
   .horizontal-menu li a {
     background: transparent;
-    color: #811f8c;
     padding: 0.3em 0.7em;
     border-radius: 8px;
     font-size: 1.2rem;
@@ -2889,6 +2914,7 @@ body.underage-page .logo {
   0% { text-shadow: 0 0 6px #fff, 0 0 12px #fb9f11; }
   100% { text-shadow: 0 0 10px #fff, 0 0 20px #ff6ec7; }
 }
+
 
 
 
