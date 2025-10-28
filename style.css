@@ -2597,12 +2597,12 @@ body.underage-page .logo {
     display: block;
     justify-content: initial;
   }
-  .horizontal-menu li:nth-child(1) a {
-  color: #f3eac0; /* Bacca Luce - Home */
+.horizontal-menu li:nth-child(1) a {
+  color: #ffa98e; /* Bacca Luce - Home */
 }
 
 .horizontal-menu li:nth-child(2) a {
-  color: #fb9f11; /* Passione - Sipper Swag */
+  color: #f3eac0; /* Passione - Sipper Swag */
 }
 
 .horizontal-menu li:nth-child(3) a {
@@ -2614,7 +2614,7 @@ body.underage-page .logo {
 }
 
 .horizontal-menu li:nth-child(5) a {
-  color: #ffa98e; /* Tangelo - FAQ */
+  color: #fb9f11; /* Tangelo - FAQ */
 }
 
 /* Optional: Add hover sparkle */
@@ -2914,6 +2914,7 @@ body.underage-page .logo {
   0% { text-shadow: 0 0 6px #fff, 0 0 12px #fb9f11; }
   100% { text-shadow: 0 0 10px #fff, 0 0 20px #ff6ec7; }
 }
+
 
 
 
