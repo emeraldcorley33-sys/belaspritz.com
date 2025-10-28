@@ -2947,7 +2947,13 @@ body.underage-page .logo {
 @keyframes pulseGlow {
   0% { text-shadow: 0 0 6px #fff, 0 0 12px #fb9f11; }
   100% { text-shadow: 0 0 10px #fff, 0 0 20px #ff6ec7; }
-}}
+}
+  @media screen and (max-width: 480px) {
+  .coming-soon-banner {
+    font-size: 1.4rem;
+    padding: 0.6rem 0;
+  }
+}
 
 
 
