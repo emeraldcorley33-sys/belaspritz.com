@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Where to Buy | Belá</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
     <nav class="horizontal-nav">
       <button id="hamburger" class="hamburger" aria-controls="site-menu" aria-expanded="false" aria-label="Open menu">☰</button>
       <ul id="site-menu" class="horizontal-menu">
@@ -11,21 +18,14 @@
         <li><a href="faq.html">FAQ</a></li>
       </ul>
     </nav>
-    </header>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Where to Buy | Belá</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  </header>
+
 <header style="text-align:center; padding:2rem 0;">
   <div class="bela-logo-container">
     <img src="bela-text-logo.png" alt="Belá Logo" class="logo" style="max-width:280px; height:auto;" />
   </div>
   <img src="glitter.png" alt="Glitter Overlay" class="glitter" style="width:100%; height:auto; opacity:0.18;" />
 </header>
-
 <section class="terms-section" style="
   max-width: 800px;
   margin: 3rem auto;
@@ -105,7 +105,31 @@ Check back soon or follow us on Instagram for launch updates and location drops.
 <div class="footer-copyright">
         &copy; 2025 Belá. All rights reserved.
       </div>
+      <script>
+  const hamburger = document.getElementById('hamburger');
+  const header = document.querySelector('header');
+  const menu = document.getElementById('site-menu');
+
+  if (hamburger && menu) {
+    hamburger.addEventListener('click', () => {
+      const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+      hamburger.textContent = expanded ? '☰' : '✕';
+      header.classList.toggle('open');
+      document.body.classList.toggle('menu-open');
+    });
+
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        header.classList.remove('open');
+        document.body.classList.remove('menu-open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        hamburger.textContent = '☰';
+      });
+    });
+  }
+</script>
+    </div>
+  </section>
+  <button onclick="scrollToTop()" id="scrollTopBtn" title="Back to top">↑</button>
 </body>
-
-</html>
-
