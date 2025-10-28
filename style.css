@@ -2922,7 +2922,13 @@ body.underage-page .logo {
   cursor: pointer;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
-
+  @media screen and (max-width: 480px) {
+  .coming-soon-banner {
+    font-size: 1.4rem;
+    padding: 0.6rem 0;
+  }
+}
+}
 .coming-soon-banner {
   background: linear-gradient(90deg, #fb9f11, #ff6ec7);
   color: white;
@@ -2943,28 +2949,7 @@ body.underage-page .logo {
   overflow: hidden;
   animation: pulseGlow 1.5s infinite alternate;
 }
-
 @keyframes pulseGlow {
   0% { text-shadow: 0 0 6px #fff, 0 0 12px #fb9f11; }
   100% { text-shadow: 0 0 10px #fff, 0 0 20px #ff6ec7; }
 }
-  @media screen and (max-width: 480px) {
-  .coming-soon-banner {
-    font-size: 1.4rem;
-    padding: 0.6rem 0;
-  }
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
