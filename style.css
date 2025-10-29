@@ -2437,10 +2437,15 @@ body.underage-page .logo {
   margin: 0;
 }
 .horizontal-menu li a {
+  text-shadow:
+    2px 2px 4px rgba(0, 0, 0, 0.8),
+    0 0 6px rgba(0, 0, 0, 0.6);
+}
+.horizontal-menu li a {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
-  color: #811f8c;
+  color: #f3eac0;
   text-decoration: none;
   padding: 0.3em 0.7em;
   border-radius: 8px;
@@ -2912,6 +2917,20 @@ body.underage-page .logo {
     padding: 0.6rem 0;
   }
 }
+@keyframes pulse {
+  0% { filter: drop-shadow(0 0 6px #f3eac0); }
+  50% { filter: drop-shadow(0 0 18px #f65e4a); }
+  100% { filter: drop-shadow(0 0 6px #811f8c); }
+}
+
+.logo {
+  animation: pulse 2s infinite;
+}
+.logo-wrapper {
+  margin: 0 auto 1rem auto;
+  text-align: center;
+}
+
 .coming-soon-banner {
   background: linear-gradient(90deg, #fb9f11, #ff6ec7);
   color: white;
