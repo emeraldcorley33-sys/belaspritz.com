@@ -175,14 +175,13 @@
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 </script>
+document.querySelectorAll('a[href="#"]').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault(); // prevent scroll-to-top
+  });
+});
+</script>
 <button onclick="scrollToTop()" id="scrollTopBtn" title="Back to top">↑</button>
 </body>
 
 </html>
-
-
-
-
-
-
-
