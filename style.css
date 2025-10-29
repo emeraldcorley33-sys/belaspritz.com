@@ -2441,6 +2441,12 @@ body.underage-page .logo {
     2px 2px 4px rgba(0, 0, 0, 0.8),
     0 0 6px rgba(0, 0, 0, 0.6);
 }
+@media (max-width: 768px) {
+  .horizontal-menu li a {
+    text-shadow: none !important;
+    color: #111 !important; /* Optional: boost contrast */
+  }
+}
 .horizontal-menu li a {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
@@ -2508,6 +2514,20 @@ body.underage-page .logo {
     z-index: 120;
     overflow-y: auto;
   }
+  .horizontal-menu {
+  display: none;
+  flex-direction: column;
+  background: rgba(255,255,255,0.9);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  z-index: 99;
+}
+.horizontal-menu.open {
+  display: flex;
+}
   header.open .horizontal-menu li {
     width: 100%;
     display: flex;
