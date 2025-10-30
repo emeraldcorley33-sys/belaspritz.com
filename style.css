@@ -134,20 +134,42 @@
     min-height: 100vh;
   }
   .bela-logo-container {
-    width: 90vw;
-    max-width: 220px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: center;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+  width: 90vw;
+  max-width: 600px;
+  position: relative;
+  z-index: 10;
+}
+
+/* Base logo style */
+.logo {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Responsive scaling */
+@media (max-width: 768px) {
   .logo {
-    width: 90vw !important;
-    max-width: 220px !important;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    max-width: 320px;
   }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 360px) {
+  .logo {
+    max-width: 240px;
+  }
+}
   .container .age-box {
     width: 80vw !important;
     max-width: 260px !important;
@@ -162,24 +184,7 @@
     display: block !important;
   }
 }
-.bela-logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  margin: 0 auto;
-  position: relative;
-  z-index: 10;
-}
-.bela-logo-container {
-  margin-top: 0;
-  margin-bottom: 0;
-}
 
-.logo {
-  width: 400px !important;
-  display: block;
-  margin: 0 auto;
-}
 .age-box {
   margin-top: 0;
   padding-bottom: 40px;
@@ -229,12 +234,6 @@
   border: none !important;
 }
 @media (max-width: 600px) {
-  .logo {
-    width: 600px !important;
-    max-width: 100vw;
-    margin: 0 auto;
-    display: block;
-  }
   .container .age-box {
     padding: 1.2rem 1rem 1rem 1rem;
     max-width: 88vw;
