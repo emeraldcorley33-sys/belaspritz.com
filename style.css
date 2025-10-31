@@ -139,18 +139,28 @@
   align-items: flex-start;
   margin: 0 auto;
   width: 90vw;
-  max-width: 600px;
+  max-width: 260px;
   position: relative;
-  z-index: 10;
 }
 
 /* Base logo style */
 .logo {
   width: 100%;
-  max-width: 400px;
+  max-width: 120px;
   display: block;
   margin: 0 auto;
+  position: relative;
+  z-index: 1000 !important;
 }
+
+.logo-wrapper {
+  position: relative;
+  z-index: 1000 !important;
+  margin-top: 0;
+  margin-bottom: -2.5rem;
+  flex-shrink: 0;
+}
+
 
 /* Responsive scaling */
 @media (max-width: 768px) {
@@ -1295,7 +1305,7 @@ bela-header {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  z-index: 0;
+  z-index: 0 !important;
   opacity: 0.3;
   pointer-events: none;
 }
