@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tangelo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-page">
+  <header>
+    <nav class="horizontal-nav">
+      <button id="hamburger" class="hamburger" aria-controls="site-menu" aria-expanded="false" aria-label="Open menu">☰</button>
+      <button id="close-menu" class="menu-close" aria-label="Close menu" hidden>✕</button>
+      <button id="exit-menu" class="menu-exit" aria-label="Exit menu" hidden>Exit</button>
+      <ul id="site-menu" class="horizontal-menu">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="our-story.html">Our Story</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="background tangelo-bg tangelo-scroll">
+    <div style="max-width:1200px; margin:0 auto;">
+      <div class="bela-logo-container">
+        <img src="bela-text-logo.png" alt="Belá Logo" class="logo" />
+      </div>
+      <img src="glitter.png" alt="Glitter Overlay" class="glitter" style="position:absolute;top:0;left:0;width:100vw;height:auto;z-index:1;pointer-events:none;" />
+    </div>
+         
+<section class="tangelo-details" style="position:relative; z-index:2;">
+  <div class="tangelo-bg-box" style="background: #f65e4a; width: 100vw; min-width: 100vw; max-width: 100vw; margin-left: 50%; transform: translateX(-50%); border-radius: 0; box-shadow: 0 2px 12px rgba(246,94,74,0.10); position: relative; display: flex; flex-direction: column; align-items: center; padding: 2.5rem 2vw 0 2vw; z-index:2;">
+    <h1 class="tangelo-title" style="color: #f3eac0; text-align: center; margin-bottom: 1.2rem; margin-top: 0; font-size: 2.2em; font-family: inherit;">Tangelo</h1>
+    <div style="display: flex; flex-direction: row; justify-content: center; align-items: flex-start; width: 100%;">
+  <div class="tangelo-left" style="background: none; box-shadow: none; margin-top: 0.5rem;">
+      <img src="bela-can-and-box-mockup/tangelo-can-and-box-mockup.png" alt="Tangelo Can and Box" class="tangelo-can-box" />
+      <div class="tangelo-buy-now">
+  <a href="#" class="buy-now-button" style="background: radial-gradient(circle at 50% 50%, #ff6d4d 12%, #f3eac0 88%) !important; color: #f65e4a; border: none; border-radius: 24px; padding: 0.7rem 1.5rem; font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 700; letter-spacing: 0.03em; box-shadow: 0 2px 8px rgba(255,215,0,0.15); transition: background 0.18s, color 0.18s, transform 0.15s; cursor: pointer;">Buy Now</a>
+      </div>
+    </div>
+    <div class="tangelo-info" style="position: relative; width: 100%; background: none; box-shadow: none;">
+      <div class="tangelo-description-box" style="color: #f3eac0;">
+        <div class="tangelo-description"> 
+          <h3 class="tangelo-subtitle">Sparkling Tangelo Citrus Soda</h3>
+          <p class="tangelo-desc">A vibrant blend of tangy citrus and sweet orange, Tangelo is the perfect pick-me-up for any occasion. Enjoy the refreshing taste and natural energy boost in every sip.</p>
+          <div class="ingredients">
+            <h3 class="ingredients-title">Ingredients</h3>
+            <p class="ingredients-list">Sparkling water, natural tangelo flavor, cane sugar, citric acid, vitamin C.</p>
+          </div>
+          <p class="AlC">100 CALORIES | 8.4 FL OZ (250 ML)</p>
+          <div class="tangelo-nutrition-facts" style="text-align:center; margin: 1rem 0 0.5rem 0;">
+            <img src="bela-nutrition-facts/tangelo-nutrition-facts.png" alt="Tangelo Nutrition Facts" class="tangelo-nutrition-facts" />
+          </div>
+          <img src="BELÁ LOGO DESIGN/tangelo-logo.png" alt="Tangelo Logo" class="tangelo-logo" style="display: block; margin: 1.2rem auto 0 auto; max-width: 120px; width: 100%;" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="add-flavors" style="background: linear-gradient(90deg, #b3214e 0%, #811f8c 33%, #f3eac0 66%, #ffdf5c 100%); border-radius: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); padding: 2.2rem 0 2.2rem 0; margin-top: 2.5rem; width: 100vw; min-width: 0; max-width: 100vw; margin-left: 50%; transform: translateX(-50%);">
+  <h3 class="add-flavors-title">Want MORE Belá?</h3>
+  <p class="add-flavors-description">Level up your sip—just tap to add.</p>
+  <p class="add-flavors-list">Pick your favorites and stack your cart with flavor:</p>
+  <div class="add-flavors-list">
+    <div class="add-flavor-row">
+      <div class="flavor-row-top">
+        <a href="bacca-luce.html" class="flavor-link bacca-luce-flavor">Bacca Luce</a>
+        <img src="BELÁ LOGO DESIGN/bacca-luce-logo.png" alt="Bacca Luce Logo" class="flavor-logo">
+      </div>
+      <button class="add-flavor-btn bacca-luce-add">ADD</button>
+    </div>
+    <div class="add-flavor-row">
+      <div class="flavor-row-top">
+        <a href="passione.html" class="flavor-link passione-flavor">Passione</a>
+        <img src="BELÁ LOGO DESIGN/passion-logo.png" alt="Passione Logo" class="flavor-logo">
+      </div>
+      <button class="add-flavor-btn passione-add">ADD</button>
+    </div>
+    <div class="add-flavor-row">
+      <div class="flavor-row-top">
+        <a href="#" class="flavor-link saray-flavor">Saray</a>
+        <img src="BELÁ LOGO DESIGN/saray-logo.png" alt="Saray Logo" class="flavor-logo">
+      </div>
+      <button class="add-flavor-btn saray-add">ADD</button>
+    </div>
+    <div class="add-flavor-row">
+      <div class="flavor-row-top">
+        <a href="#" class="flavor-link limonchello-flavor">Limonchello</a>
+        <img src="BELÁ LOGO DESIGN/limonchello-logo.png" alt="Limonchello Logo" class="flavor-logo">
+      </div>
+      <button class="add-flavor-btn limonchello-add">ADD</button>
+    </div>
+  </div>
+</section>
+<!-- Our Story Section -->
+<section class="our-story-section">
+  <a href="ourstory.html" class="our-story-icon">
+    <img src="our-story-icon.png" alt="Our Story" />
+  </a>
+</section>
+<!-- Follow Us Section -->
+<section class="follow-us-section">
+  <div class="follow-us-content">
+    <span class="follow-us-title">Follow Us</span>
+    <div class="follow-us-icons">
+      <a href="https://facebook.com" class="follow-icon" target="_blank" rel="noopener">
+        <img src="facebook-icon.png" alt="Facebook" />
+      </a>
+      <a href="https://instagram.com" class="follow-icon" target="_blank" rel="noopener">
+        <img src="instagram-icon.png" alt="Instagram" />
+      </a>
+    </div>
+  </div>
+</section>
+<!-- Information Section -->
+<section class="info-section">
+  <div class="info-content">
+    <span class="info-title">Information</span>
+    <div class="info-links">
+      <a href="#" class="info-link">Contact Us</a>
+      <a href="#" class="info-link">Where to Buy</a>
+      <a href="#" class="info-link">Do Not Sell My Personal Info</a>
+    </div>
+  </div>
+</section>
+<!-- Footer Section -->
+<section class="footer-section">
+  <div class="footer-content">
+    <div class="footer-links">
+      <a href="#" class="footer-link">User Agreement</a>
+  <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+      <a href="#" class="footer-link">Trademarks</a>
+      <a href="#" class="footer-link">Sitemap</a>
+    </div>
+    <div class="footer-copyright">
+      &copy; 2025 Belá. All rights reserved.
+    </div>
+  </div>
+</section>
+  <script>
+    (function(){
+      const hamburger = document.getElementById('hamburger');
+      const closeBtn = document.getElementById('close-menu');
+      const exitBtn = document.getElementById('exit-menu');
+      const header = document.querySelector('header');
+      const menu = document.getElementById('site-menu');
+      if (!hamburger || !menu) return;
+
+      function setClosedState() {
+        hamburger.setAttribute('aria-expanded', 'false');
+        hamburger.textContent = '☰';
+        hamburger.setAttribute('aria-label', 'Open menu');
+        if (closeBtn) closeBtn.hidden = true;
+        if (exitBtn) exitBtn.hidden = true;
+      }
+      function setOpenState() {
+        hamburger.setAttribute('aria-expanded', 'true');
+        hamburger.textContent = '✕';
+        hamburger.setAttribute('aria-label', 'Close menu');
+        if (closeBtn) closeBtn.hidden = false;
+        if (exitBtn) exitBtn.hidden = false;
+      }
+
+      // initialize
+      setClosedState();
+
+      hamburger.addEventListener('click', function(){
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        if (expanded) {
+          setClosedState();
+        } else {
+          setOpenState();
+        }
+        header.classList.toggle('open');
+        document.body.classList.toggle('menu-open');
+      });
+
+      // Close menu when a link is clicked (mobile)
+      menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+        header.classList.remove('open');
+        document.body.classList.remove('menu-open');
+        setClosedState();
+      }));
+
+      // Close via explicit controls
+      if (closeBtn) closeBtn.addEventListener('click', () => {
+        header.classList.remove('open');
+        document.body.classList.remove('menu-open');
+        setClosedState();
+      });
+      if (exitBtn) exitBtn.addEventListener('click', () => {
+        header.classList.remove('open');
+        document.body.classList.remove('menu-open');
+        setClosedState();
+      });
+    })();
+  </script>
+</body>
+</html>

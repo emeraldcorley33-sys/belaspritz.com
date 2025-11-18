@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Belà Spritz Age Verification</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <style>
+    /* Landing, no-box, no-scroll age gate (scoped to index only) */
+    html, body { height: 100%; }
+    body.age-page { min-height: 100vh; overflow: hidden; }
+    .age-hero { position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: clamp(12px, 3vw, 24px); }
+    .age-hero .hero-glitter { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.18; pointer-events: none; }
+    .age-content { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; gap: 16px; }
+    .age-content .logo { max-width: clamp(180px, 28vw, 320px); height: auto; }
+    .age-title { font-family: 'Montserrat', sans-serif; font-weight: 700; color: #f65e4a; text-shadow: 0 0 8px #c8a026, 0 0 16px #c8a026; font-size: clamp(1.1rem, 2.2vw, 1.6rem); text-align: center; margin: 0; }
+    .age-sub { font-family: 'Montserrat', sans-serif; font-weight: 600; color: #f65e4a; text-shadow: 0 0 8px #c8a026, 0 0 16px #c8a026; font-size: clamp(0.85rem, 1.6vw, 1rem); text-align: center; margin: 0; }
+    .age-form { margin-top: 6px; }
+    .age-inputs { display: flex; gap: clamp(8px, 2vw, 16px); justify-content: center; }
+    .input-group { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+    .input-group label { font: 600 0.8rem 'Montserrat', sans-serif; color: #333; text-transform: uppercase; letter-spacing: 0.4px; }
+    .input-group input { font: 500 1.05rem 'Montserrat', sans-serif; text-align: center; padding: 10px 8px; width: clamp(72px, 12vw, 110px); border: 2px solid #c8a026; border-radius: 10px; background: #f3eac0; box-shadow: none; transition: box-shadow 0.2s; }
+    .input-group input:focus { outline: none; box-shadow: 0 0 0 3px rgba(200,160,38,0.22); }
+    .age-actions { display: flex; justify-content: center; margin-top: 10px; }
+    .btn.yes { font: 700 1rem 'Montserrat', sans-serif; color: #fff; background: linear-gradient(135deg, #c8a026, #d4af37); border: 0; border-radius: 999px; padding: 0.9rem 2rem; box-shadow: 0 4px 10px rgba(200,160,38,0.28); cursor: pointer; transition: all 0.3s ease; }
+    .btn.yes:hover { background: #811f8c; transform: translateY(-2px); box-shadow: 0 6px 16px rgba(129,31,140,0.4); }
+    .error-message { font: 600 0.95rem 'Montserrat', sans-serif; color: #ff4444; background: rgba(255,68,68,0.1); padding: 10px 12px; border-radius: 8px; margin-top: 10px; display: none; }
+  /* Fixed footer copy at bottom */
+  .footer-copyright { position: fixed; left: 0; right: 0; bottom: 12px; text-align: center; z-index: 3; font: 600 0.9rem 'Montserrat', sans-serif; color: #ffa98e; text-shadow: 0 0 8px #c8a026, 0 0 12px #c8a026; border-top: 2px solid #c8a026; padding-top: 8px; background: rgba(0,0,0,0.3); padding-bottom: 6px; pointer-events: none; }
+    /* Mobile tightness to avoid vertical scroll */
+    @media (max-height: 650px) and (max-width: 420px) {
+      .age-content { gap: 10px; }
+      .age-inputs { gap: 8px; }
+      .input-group input { padding: 8px 6px; width: 80px; font-size: 0.95rem; }
+      .btn.yes { padding: 0.7rem 1.5rem; font-size: 0.95rem; }
+      .footer-copyright { bottom: 6px; font-size: 0.8rem; }
+    }
+  </style>
+</head>
+<body class="age-page">
+  <main class="age-hero">
+    <img src="glitter.png" alt="Glitter Overlay" class="hero-glitter" />
+    <div class="age-content" role="dialog" aria-labelledby="age-check">
+      <img src="bela-text-logo-gold-and-white.png" alt="Belá Logo" class="logo" />
+      <p id="age-check" class="age-title">Are you 21 or older?</p>
+      <p class="age-sub">We're flattered — but we gotta check.</p>
+      <form id="age-verification-form" class="age-form">
+        <div class="age-inputs">
+          <div class="input-group">
+            <label for="month">Month</label>
+            <input type="number" id="month" name="month" placeholder="MM" min="1" max="12" required />
+          </div>
+          <div class="input-group">
+            <label for="day">Day</label>
+            <input type="number" id="day" name="day" placeholder="DD" min="1" max="31" required />
+          </div>
+          <div class="input-group">
+            <label for="year">Year</label>
+            <input type="number" id="year" name="year" placeholder="YYYY" min="1900" required />
+          </div>
+        </div>
+        <div class="age-actions">
+          <button type="submit" class="btn yes"><strong>Enter</strong></button>
+        </div>
+        <p class="error-message" id="error-message"></p>
+      </form>
+    </div>
+  </main>
+<div class="footer-copyright">
+  
+        &copy; 2025 Belá. All rights reserved.
+      </div>
+  
+  <script>
+    // Check if user has already been verified and if verification is still valid
+    (function() {
+      const isVerified = localStorage.getItem('ageVerified');
+      const expiry = localStorage.getItem('ageVerifiedExpiry');
+      
+      if (isVerified === 'true' && expiry) {
+        const expiryDate = new Date(expiry);
+        const now = new Date();
+        
+        // Check if verification is still valid (not expired)
+        if (now < expiryDate) {
+          // User was previously verified and still valid, redirect to home
+          window.location.href = 'home.html';
+          return;
+        } else {
+          // Verification expired, clear it
+          localStorage.removeItem('ageVerified');
+          localStorage.removeItem('ageVerifiedExpiry');
+        }
+      }
+
+      const form = document.getElementById('age-verification-form');
+      const errorMessage = document.getElementById('error-message');
+
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const month = parseInt(document.getElementById('month').value);
+        const day = parseInt(document.getElementById('day').value);
+        const year = parseInt(document.getElementById('year').value);
+
+        // Validate inputs
+        if (!month || !day || !year) {
+          showError('Please enter your complete date of birth.');
+          return;
+        }
+
+        if (month < 1 || month > 12) {
+          showError('Please enter a valid month (1-12).');
+          return;
+        }
+
+        if (day < 1 || day > 31) {
+          showError('Please enter a valid day (1-31).');
+          return;
+        }
+
+        if (year < 1900 || year > new Date().getFullYear()) {
+          showError('Please enter a valid year.');
+          return;
+        }
+
+        // Calculate age
+        const birthDate = new Date(year, month - 1, day);
+        const today = new Date();
+        let age = today.getFullYear() - birthDate.getFullYear();
+        const monthDiff = today.getMonth() - birthDate.getMonth();
+        
+        if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+          age--;
+        }
+
+        // Check if 21 or older
+        if (age >= 21) {
+          // Automatically remember for 30 days
+          const expiryDate = new Date();
+          expiryDate.setDate(expiryDate.getDate() + 30);
+          localStorage.setItem('ageVerified', 'true');
+          localStorage.setItem('ageVerifiedExpiry', expiryDate.toISOString());
+          // Redirect to home page
+          window.location.href = 'home.html';
+        } else {
+          showError('You must be 21 or older to enter this site.');
+        }
+      });
+
+      function showError(message) {
+        errorMessage.textContent = message;
+        errorMessage.style.display = 'block';
+        errorMessage.style.color = '#ff4444';
+        errorMessage.style.marginTop = '1rem';
+        errorMessage.style.fontWeight = '600';
+        
+        // Hide error after 5 seconds
+        setTimeout(() => {
+          errorMessage.style.display = 'none';
+        }, 5000);
+      }
+    })();
+  </script>
+</body>
+</html>
