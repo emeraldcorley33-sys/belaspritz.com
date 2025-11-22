@@ -52,6 +52,10 @@ main, .container, .bacca-luce-container, .our-story-content, .info-content, .fol
     margin: 0.7em auto 0 auto !important;
     display: block !important;
   }
+  /* Hide mobile line break on desktop - just show as space */
+  .mobile-break {
+    display: inline !important;
+  }
   .pop-open-the-party h2 {
     font-size: 5rem !important;
     max-width: 90vw;
@@ -62,6 +66,12 @@ main, .container, .bacca-luce-container, .our-story-content, .info-content, .fol
     margin: 12px auto 0;
     margin-bottom: 2rem;
     display: block;
+  }
+  /* Make the span act as a line break ONLY on mobile/tablet */
+  @media (max-width: 768px) {
+    .mobile-break {
+      display: block !important;
+    }
   }
   @media screen and (max-width: 360px) and (max-height: 740px) {
   .pop-open-the-party {
@@ -79,14 +89,20 @@ main, .container, .bacca-luce-container, .our-story-content, .info-content, .fol
   }
 }
   @media screen and (max-width: 768px) {
-  .pop-open-the-party {
-    margin-bottom: 1rem !important;
-  }
+    /* Mobile: bump heading size slightly for readability */
+    .pop-open-the-party h2 { font-size: 2.9rem !important; }
+    .pop-open-the-party {
+      margin-bottom: 1rem !important;
+    }
 
-  .flavor-section {
-    padding-top: 0.5rem !important;
+    .flavor-section {
+      padding-top: 0.5rem !important;
+    }
   }
-}
+  /* Extra-small phones: nudge down slightly more */
+  @media (max-width: 360px) {
+    .pop-open-the-party h2 { font-size: 2.6rem !important; }
+  }
   .flavor-list {
     display: flex !important;
     flex-direction: row !important;
@@ -164,14 +180,56 @@ main, .container, .bacca-luce-container, .our-story-content, .info-content, .fol
   position: relative;
 }
 
+@media (min-width: 1100px) {
+  .bela-logo-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    justify-content: center !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+  
+  .site-header {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+      padding: 1rem 0 0.5rem 0 !important; /* tightened vertical space under logo */
+  }
+
+  /* Remove extra gap after the logo/header across all pages */
+  .site-header + section,
+  header + .background,
+  .site-header + .background,
+  header + section {
+    margin-top: 0 !important;
+  }
+
+  /* Specific sections that previously had large top margins */
+  .terms-section { margin-top: 1.5rem !important; }
+  body.faq-page .faq-main-section { margin-top: 1rem !important; }
+  
+  .logo {
+    margin: 0 auto !important;
+    display: block !important;
+  }
+}
+
 /* Base logo style */
 .logo {
   width: 100%;
-  max-width: 120px;
+  max-width: 100px; /* Unified desktop/logo size across all pages */
   display: block;
   margin: 0 auto;
   position: relative;
   z-index: 1000 !important;
+}
+
+/* Extra-large screens: slightly bigger logo */
+@media (min-width: 1400px) {
+  .logo {
+    max-width: 120px;
+  }
 }
 
 .logo-wrapper {
@@ -180,10 +238,22 @@ main, .container, .bacca-luce-container, .our-story-content, .info-content, .fol
   margin-top: 0;
   margin-bottom: -2.5rem;
   flex-shrink: 0;
+  display: flex;
+  justify-content: center;
 }
 
 
 /* Responsive scaling */
+@media (min-width: 1100px) {
+  .logo-wrapper {
+    justify-content: center;
+  }
+  
+  .logo {
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 768px) {
   .logo {
     max-width: 320px;
@@ -1094,7 +1164,7 @@ html, body {
   -ms-flex-direction: row;
   gap: 32px;
   justify-content: center;
-  margin-top: -20px; /* Lower icons a bit for better centering */
+  margin-top: -25px; /* Move icons down (less negative) */
   margin-bottom: 18px;
 }
 .follow-us-title {
@@ -1104,11 +1174,11 @@ html, body {
   color: #ffa98e;
   margin-right: 24px;
   letter-spacing: 2px;
-  margin-top: 1.2em;
+  margin-top: 0; /* Remove top margin to raise title */
 }
 .follow-icon img {
-  width: 64px;
-  height: 64px;
+  width: 48px;
+  height: 48px;
   object-fit: contain;
   filter: drop-shadow(0 2px 8px rgba(0,0,0,0.10));
   transition: transform 0.18s;
@@ -1823,15 +1893,27 @@ body.underage-page .logo {
   /* Default behavior (mobile-first) is no negative offset; desktop override below */
   margin-top: 0 !important;
 }
+/* Bring can closer to the logo on mobile/tablet */
+@media (max-width: 768px) {
+  .background.home-bg.home-scroll .bela-drink-can {
+    margin-top: -24px !important;
+  }
+}
+/* Extra-small phones: slightly less pull to avoid overlap */
+@media (max-width: 360px) {
+  .background.home-bg.home-scroll .bela-drink-can {
+    margin-top: -16px !important;
+  }
+}
 @media (min-width: 1100px) {
   .background.home-bg.home-scroll .bela-drink-can {
-    margin-top: -96px !important; /* move can higher on wide screens only */
+    margin-top: -112px !important; /* move can even higher on wide screens */
   }
 }
 .pop-open-the-party {
-  /* pull the heading closer to the cans (responsive via vw so it scales on mobile) */
-  margin-top: -6vw; /* negative vw pulls up on large screens, scales down on smaller screens */
-  margin-bottom: -1.2vw; /* reduce space below the heading so following cans move up */
+  /* Better balanced spacing - less negative margin */
+  margin-top: -3vw; /* Reduced from -6vw for less pull up */
+  margin-bottom: 1rem; /* Changed to positive for more space below */
   text-align: center;
   color: #c8a026;
 }
@@ -1857,6 +1939,14 @@ body.underage-page .logo {
   display: block;      /* Each button on its own line */
   margin: 18px auto 0; /* Space between buttons */
   max-width: 220px;
+}
+
+/* Fine-tune home hero spacing: pull heading slightly closer to can on wide screens only */
+@media (min-width: 1100px) {
+  .background.home-bg.home-scroll .pop-open-the-party {
+    margin-top: -3.8vw; /* slightly more negative than global -3vw to sit closer to can */
+    margin-bottom: 1rem; /* keep comfortable space below */
+  }
 }
 /* Default flavor section background */
 .flavor-section {
@@ -2654,7 +2744,7 @@ body.underage-page .logo {
     box-sizing: border-box;
   }
   .pop-open-the-party { 
-    margin: 1.5rem auto 0.5rem;
+    margin: 0.8rem auto 1.2rem; /* Balanced top and bottom spacing for mobile */
     width: 100%;
     text-align: center;
   }

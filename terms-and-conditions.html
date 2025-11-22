@@ -22,11 +22,12 @@
       </ul>
     </nav>
   </header>
-  <div class="site-header" style="text-align:center; padding:2rem 0;">
-    <div class="bela-logo-container">
-      <img src="bela-text-logo-gold-and-white.png" alt="Belá Logo" class="logo" style="max-width:280px; height:auto;" />
+  <!-- Global glitter overlay at top, behind all content -->
+  <img src="glitter.png" alt="Glitter Overlay" class="glitter" style="position:absolute; top:0; left:0; width:100%; height:auto; opacity:0.18; z-index:1; pointer-events:none;" />
+  <div class="site-header" style="text-align:center; padding:2rem 0; display:flex; flex-direction:column; align-items:center; width:100%; position:relative; z-index:10;">
+    <div class="bela-logo-container" style="display:flex; justify-content:center; align-items:center; width:100%; max-width:100%; position:relative; z-index:10;">
+      <img src="bela-text-logo-gold-and-white.png" alt="Belá Logo" class="logo" style="margin:0 auto; max-width:280px; height:auto; position:relative; z-index:10;" />
     </div>
-    <img src="glitter.png" alt="Glitter Overlay" class="glitter" style="width:100%; height:auto; opacity:0.18;" />
   </div>
 
   <!-- Terms Section -->
@@ -50,8 +51,33 @@
   <h3>3. Orders & Payments</h3>
   <p>All purchases made through our site are subject to availability and confirmation. We reserve the right to cancel or refuse any order. Prices are listed in USD and may change without notice.</p>
 
-  <h3>4. Returns & Refunds</h3>
-  <p>We want you to love your Belá experience. If you’re not satisfied, please refer to our <a href="privacy-policy.html" style="color:#fb9f11; text-decoration:underline;">Return Policy</a>.</p>
+  <h3>4. Returns & Refunds</h3><a id="returns"></a>
+  <p>We want you to love what you receive. If your order arrives damaged, incorrect, or incomplete, please contact us within 7 days of delivery at [your support email or contact form link]. We’ll work with you to make it right.
+  <p><strong>Eligibility for Returns:</strong></p>
+  <ul>
+    <li>Only items purchased directly from our website are eligible.</li>
+    <li>Items must be unused, in original packaging, and returned within 14 days of delivery.</li>
+    <li>Custom, limited-edition, or collector items may be final sale unless damaged or defective.</li>
+  </ul>
+
+  <p><strong>Refunds:</strong></p>
+  <ul>
+    <li>Approved refunds will be issued to the original payment method within 5–10 business days.</li>
+    <li>Shipping costs are non-refundable unless the return is due to our error.</li>
+  </ul>
+
+  <p><strong>Exchanges:</strong></p>
+  <ul>
+    <li>We do not offer direct exchanges. Please initiate a return and place a new order.</li>
+  </ul>
+
+  <p><strong>How to Start a Return:</strong></p>
+  <ul>
+    <li>Visit our <a href="contact-us.html" style="color:#fb9f11; text-decoration:underline;">Contact Us</a> page with your order number and reason for return.</li>
+    <li>We'll provide instructions and a return authorization if eligible.</li>
+  </ul>
+
+  <p>We want you to love your Belá experience!</p>
 
   <h3>5. Age Verification</h3>
   <p>Belá Spritz is intended for individuals <strong>21 years of age or older</strong>. By purchasing or consuming Belá Spritz products, you confirm that you meet the legal drinking age in your jurisdiction. We reserve the right to request age verification and refuse service to anyone underage.</p>

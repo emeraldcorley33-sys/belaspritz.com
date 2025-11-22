@@ -27,7 +27,7 @@
     .btn.yes:hover { background: #811f8c; transform: translateY(-2px); box-shadow: 0 6px 16px rgba(129,31,140,0.4); }
     .error-message { font: 600 0.95rem 'Montserrat', sans-serif; color: #ff4444; background: rgba(255,68,68,0.1); padding: 10px 12px; border-radius: 8px; margin-top: 10px; display: none; }
   /* Fixed footer copy at bottom */
-  .footer-copyright { position: fixed; left: 0; right: 0; bottom: 12px; text-align: center; z-index: 3; font: 600 0.9rem 'Montserrat', sans-serif; color: #ffa98e; text-shadow: 0 0 8px #c8a026, 0 0 12px #c8a026; border-top: 2px solid #c8a026; padding-top: 8px; background: rgba(0,0,0,0.3); padding-bottom: 6px; pointer-events: none; }
+  .footer-copyright { position: fixed; left: 0; right: 0; bottom: 12px; text-align: center; z-index: 3; font: 600 0.9rem 'Montserrat', sans-serif; color: #c8a026; pointer-events: none; }
     /* Mobile tightness to avoid vertical scroll */
     @media (max-height: 650px) and (max-width: 420px) {
       .age-content { gap: 10px; }
@@ -120,23 +120,30 @@
           return;
         }
 
-        if (year < 1900 || year > new Date().getFullYear()) {
+        const currentYear = new Date().getFullYear();
+        if (year < 1900 || year > currentYear) {
           showError('Please enter a valid year.');
           return;
         }
 
-        // Calculate age
-        const birthDate = new Date(year, month - 1, day);
+        // Calculate age using the most reliable method: 
+        // Compare birth date to the date 21 years ago from today
         const today = new Date();
-        let age = today.getFullYear() - birthDate.getFullYear();
-        const monthDiff = today.getMonth() - birthDate.getMonth();
+        const birthDate = new Date(year, month - 1, day);
         
-        if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
-          age--;
+        // Check if birthdate is in the future
+        if (birthDate > today) {
+          showError('Birth date cannot be in the future.');
+          return;
         }
-
-        // Check if 21 or older
-        if (age >= 21) {
+        
+        // Calculate the date that was exactly 21 years ago from today
+        const twentyOneYearsAgo = new Date();
+        twentyOneYearsAgo.setFullYear(today.getFullYear() - 21);
+        
+        // User must be born on or before the date 21 years ago
+        // If birthDate <= twentyOneYearsAgo, they are 21 or older
+        if (birthDate <= twentyOneYearsAgo) {
           // Automatically remember for 30 days
           const expiryDate = new Date();
           expiryDate.setDate(expiryDate.getDate() + 30);
