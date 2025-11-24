@@ -1,0 +1,25 @@
+# Allow all crawlers access to the site content
+User-agent: *
+Allow: /
+
+# Ensure key pages are crawlable
+Allow: /home.html
+Allow: /flavors.html
+Allow: /our-story.html
+Allow: /contact-us.html
+Allow: /where-to-buy.html
+Allow: /faq.html
+Allow: /sipper-swag.html
+
+# Allow image and asset directories
+Allow: /Bela-Glasses/
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.svg
+Allow: /style.css
+
+# Disallow admin or unnecessary pages if any
+Disallow: /underage.html
+
+# Sitemap location
+Sitemap: https://belaspritz.com/sitemap.html

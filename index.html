@@ -3,9 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Belà Spritz Age Verification</title>
+  <title>Belá Spritz - Premium Italian-Inspired Sparkling Beverages</title>
+  <meta name="description" content="Belá Spritz brings the vibrant spirit of Italian aperitivo culture to life with premium sparkling beverages. Discover our refreshing flavors including Bacca Luce, Passione, Saray, Limonchello, and Tangelo." />
+  <meta name="keywords" content="Belá Spritz, sparkling beverages, Italian drinks, aperitivo, cocktails, premium drinks, Bacca Luce, Passione, Saray, Limonchello, Tangelo" />
+  <link rel="canonical" href="https://belaspritz.com/" />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  
+  <!-- Bot Detection: Redirect crawlers directly to home.html -->
+  <script>
+    (function() {
+      // Comprehensive list of known bot user agents
+      const botPatterns = [
+        /googlebot/i,
+        /bingbot/i,
+        /slurp/i,           // Yahoo
+        /duckduckbot/i,
+        /baiduspider/i,
+        /yandexbot/i,
+        /sogou/i,
+        /exabot/i,
+        /facebookexternalhit/i,
+        /facebot/i,
+        /ia_archiver/i,     // Alexa
+        /twitterbot/i,
+        /linkedinbot/i,
+        /pinterest/i,
+        /applebot/i,
+        /whatsapp/i,
+        /slack/i,
+        /telegrambot/i,
+        /discordbot/i,
+        /adsbot/i,
+        /headlesschrome/i,
+        /chrome-lighthouse/i,
+        /pagespeed/i,
+        /gtmetrix/i,
+        /crawler/i,
+        /spider/i,
+        /bot/i
+      ];
+      
+      const userAgent = navigator.userAgent;
+      const isBot = botPatterns.some(pattern => pattern.test(userAgent));
+      
+      if (isBot) {
+        // Immediately redirect bots to the actual homepage
+        window.location.replace('home.html');
+      }
+    })();
+  </script>
   <style>
     /* Landing, no-box, no-scroll age gate (scoped to index only) */
     html, body { height: 100%; }
@@ -67,6 +114,13 @@
       </form>
     </div>
   </main>
+<noscript>
+  <!-- Fallback for crawlers without JavaScript -->
+  <div style="text-align:center; padding:2rem; font-family:'Montserrat',sans-serif;">
+    <p style="font-size:1.2rem; color:#c8a026; margin-bottom:1rem;">Welcome to Belá Spritz</p>
+    <p style="margin-bottom:1rem;">Please enable JavaScript or <a href="home.html" style="color:#811f8c; text-decoration:underline;">click here to continue to our homepage</a>.</p>
+  </div>
+</noscript>
 <div class="footer-copyright">
   
         <div class="responsible-drinking-disclaimer">Please sip responsibly — Must be 21+ to enjoy Belá. Never drink and drive.</div>
