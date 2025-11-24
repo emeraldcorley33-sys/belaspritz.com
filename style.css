@@ -3461,6 +3461,19 @@ header.open .horizontal-menu { position: fixed; top: 0; left: 0; right: 0; z-ind
   justify-content:space-between;
   gap:1rem;
 }
+.responsible-drinking-disclaimer {
+  font-size: 0.75rem;
+  line-height: 1.2;
+  text-align: center;
+  max-width: 680px;
+  margin: 0.25rem auto 0.4rem auto;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  opacity: 0.9;
+}
+@media (max-width:600px){
+  .responsible-drinking-disclaimer { font-size: 0.68rem; padding: 0 1rem; }
+}
 .faq-accordion .faq-icon { display:flex; align-items:center; }
 /* Uniform fixed icon size: identical across all FAQs */
 .faq-accordion .faq-icon-img {
