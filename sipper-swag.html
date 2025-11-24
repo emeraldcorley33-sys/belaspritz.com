@@ -101,9 +101,45 @@
       <button class="add-to-cart-btn">Add to Cart</button>
     </div>
     <div class="product-item">
-      <img src="Bela sipper swag mockups/bela-logo-pjs-purple.png" alt="Belá PJs" />
-      <h3>Belá PJs</h3>
+      <img src="Bela sipper swag mockups/bela-pjs-passione.png" alt="Belá Flavor PJs" id="pjs-image" />
+      <h3>Belá Flavor PJs</h3>
+      <select class="product-option" id="pjs-flavor" onchange="document.getElementById('pjs-image').src='Bela sipper swag mockups/bela-pjs-'+this.value+'.png'">
+        <option value="passione">Passione (Purple)</option>
+        <option value="bacca-luce">Bacca Luce (Red)</option>
+        <option value="limonchello">Limonchello (Yellow)</option>
+        <option value="saray">Saray (Pink)</option>
+        <option value="tangelo">Tangelo (Orange)</option>
+      </select>
+      <select class="product-option">
+        <option>Size</option>
+        <option value="xs">XS</option>
+        <option value="s">S</option>
+        <option value="m">M</option>
+        <option value="l">L</option>
+        <option value="xl">XL</option>
+      </select>
       <p class="product-price">$49.99</p>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+    <div class="product-item">
+      <img src="Bela sipper swag mockups/mens-bela-boxers-passione.png" alt="Men's Belá Boxers" id="boxers-image" />
+      <h3>Men's Belá Boxers</h3>
+      <select class="product-option" id="boxers-flavor" onchange="document.getElementById('boxers-image').src='Bela sipper swag mockups/mens-bela-boxers-'+this.value+'.png'">
+        <option value="passione">Passione (Purple)</option>
+        <option value="bacca-luce">Bacca Luce (Red)</option>
+        <option value="limonchello">Limonchello (Yellow)</option>
+        <option value="saray">Saray (Pink)</option>
+        <option value="tangelo">Tangelo (Orange)</option>
+      </select>
+      <select class="product-option">
+        <option>Size</option>
+        <option value="s">S</option>
+        <option value="m">M</option>
+        <option value="l">L</option>
+        <option value="xl">XL</option>
+        <option value="xxl">XXL</option>
+      </select>
+      <p class="product-price">$29.99</p>
       <button class="add-to-cart-btn">Add to Cart</button>
     </div>
     <div class="product-item">

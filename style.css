@@ -1232,6 +1232,30 @@ html, body {
   color: #c8a026;
   margin: 0.75rem 0;
 }
+.product-option {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+  background: #f8f8f8;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  margin: 0.5rem 0;
+  width: 100%;
+  max-width: 250px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.product-option:hover {
+  border-color: #c8a026;
+  background: #fff;
+}
+.product-option:focus {
+  outline: none;
+  border-color: #c8a026;
+  box-shadow: 0 0 0 3px rgba(200, 160, 38, 0.1);
+}
 .add-to-cart-btn {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
