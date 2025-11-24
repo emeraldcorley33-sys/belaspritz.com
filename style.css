@@ -216,21 +216,19 @@ main, .container, .bacca-luce-container, .our-story-content, .info-content, .fol
 }
 
 /* Base logo style */
+/* Unified responsive logo sizing */
 .logo {
   width: 100%;
-  max-width: 100px; /* Unified desktop/logo size across all pages */
+  max-width: 280px; /* Base desktop size */
   display: block;
   margin: 0 auto;
   position: relative;
   z-index: 1000 !important;
+  height: auto;
 }
 
 /* Extra-large screens: slightly bigger logo */
-@media (min-width: 1400px) {
-  .logo {
-    max-width: 120px;
-  }
-}
+@media (min-width: 1400px) { .logo { max-width: 320px; } }
 
 .logo-wrapper {
   position: relative;
@@ -254,23 +252,9 @@ main, .container, .bacca-luce-container, .our-story-content, .info-content, .fol
   }
 }
 
-@media (max-width: 768px) {
-  .logo {
-    max-width: 320px;
-  }
-}
-
-@media (max-width: 480px) {
-  .logo {
-    max-width: 280px;
-  }
-}
-
-@media (max-width: 360px) {
-  .logo {
-    max-width: 240px;
-  }
-}
+@media (max-width: 768px) { .logo { max-width: 260px; } }
+@media (max-width: 480px) { .logo { max-width: 220px; } }
+@media (max-width: 360px) { .logo { max-width: 200px; } }
   .container .age-box {
     width: 80vw !important;
     max-width: 260px !important;
@@ -3448,4 +3432,31 @@ header.open .horizontal-menu { position: fixed; top: 0; left: 0; right: 0; z-ind
     margin-left: auto;
     margin-right: auto;
   }
+}
+/* FAQ icon sizing & alignment (Passione flavor logo) */
+.faq-accordion .faq-question {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+}
+.faq-accordion .faq-icon { display:flex; align-items:center; }
+/* Uniform fixed icon size: identical across all FAQs */
+.faq-accordion .faq-icon-img {
+  width:140px; /* Fixed width for consistency */
+  height:140px; /* Fixed height to avoid variation */
+  display:block;
+  object-fit:contain;
+  flex-shrink:0;
+  transition:transform 0.25s ease;
+}
+.faq-accordion .faq-icon-img:hover {
+  transform:scale(1.05);
+}
+/* Smaller screens: proportionally reduce but keep uniform */
+@media (max-width: 600px) {
+  .faq-accordion .faq-icon-img { width:110px; height:110px; }
+}
+@media (max-width: 420px) {
+  .faq-accordion .faq-icon-img { width:95px; height:95px; }
 }
