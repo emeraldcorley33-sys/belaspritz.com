@@ -991,6 +991,7 @@ p.add-flavors-list {
   justify-content: center;
   margin-top: 2.5rem;
   width: 100vw;
+  padding-bottom: 3.5rem; /* give breathing space below button */
 }
 .flavor-variety-btn {
   background: #93489c;
@@ -1006,6 +1007,7 @@ p.add-flavors-list {
   box-shadow: 0 2px 8px rgba(0,0,0,0.10);
   transition: background 0.18s, color 0.18s, transform 0.15s;
   display: inline-block;
+  margin-bottom: 0.75rem; /* ensure additional separation from very bottom on short viewports */
 }
 .flavor-variety-btn:hover {
   background: #c8a026;
@@ -1772,21 +1774,21 @@ nav {
   z-index: 1;
 }
 .home-bg {
-    min-height: 100vh;
+    min-height: auto; /* Let it size to content */
     height: auto;
     overflow-y: visible !important;
     overflow-x: hidden;
     padding-top: 0;
-    padding-bottom: 60px;
+    padding-bottom: 0;
     box-sizing: border-box;
 }
 .home-scroll {
   overflow-y: auto !important;   /* Enable vertical scroll */
   overflow-x: hidden !important;
-  min-height: 100vh !important;
+  min-height: auto !important; /* Let it size to content */
   height: auto !important;
   padding-top: 0 !important;
-  padding-bottom: 60px !important;
+  padding-bottom: 0 !important;
   box-sizing: border-box;
 }
 .home-scroll .bela-drink-can {
@@ -1902,7 +1904,7 @@ body.underage-page .logo {
 /* Bring can closer to the logo on mobile/tablet */
 @media (max-width: 768px) {
   .background.home-bg.home-scroll .bela-drink-can {
-    margin-top: -50px !important;
+    margin-top: -88px !important; /* Further tighten logo→can gap */
   }
 }
 @media (max-width: 768px) {
@@ -1922,28 +1924,25 @@ body.underage-page .logo {
   }
 }
 .pop-open-the-party {
-  /* Better balanced spacing - less negative margin */
-  margin-top: -3vw; /* Reduced from -6vw for less pull up */
-  margin-bottom: 1rem; /* Changed to positive for more space below */
+  margin-top: 0; /* Flex gap handles spacing */
+  margin-bottom: 0;
   text-align: center;
   color: #c8a026;
+  transform: translateY(-8px); /* Slightly more upward nudge */
 }
 .pop-open-the-party h2 {
   font-size: 5rem; /* Make the heading much bigger */
   display: block;
-  margin: 8px auto 0  auto;
+  margin: 0 auto; /* Remove all vertical margins */
   line-height: 1.1;
   display: inline-block;
 }
 @media (max-width: 768px) {
-  .pop-open-the-party {
-    margin-top: -8vw !important;
-    margin-bottom: 0 !important; /* keep zero */
-  }
   .pop-open-the-party h2 {
-    font-size: 4.4rem !important; /* Slightly larger for impact */
-    margin: 0 auto 0 auto !important; /* Remove 8px top gap */
+    font-size: 3.6rem !important; /* Slightly smaller for tighter vertical footprint */
+    margin: 0 auto !important;
   }
+  .pop-open-the-party { transform: translateY(-14px); }
 }
 .corsiva-uppercase {
   font-family: "Monotype Corsiva", cursive;
@@ -1965,8 +1964,8 @@ body.underage-page .logo {
 /* Fine-tune home hero spacing: pull heading slightly closer to can on wide screens only */
 @media (min-width: 1100px) {
   .background.home-bg.home-scroll .pop-open-the-party {
-    margin-top: -3.8vw; /* slightly more negative than global -3vw to sit closer to can */
-    margin-bottom: 1rem; /* keep comfortable space below */
+    margin-top: 0; /* rely on gap */
+    margin-bottom: 1rem;
   }
 }
 /* Default flavor section background */
@@ -1988,13 +1987,10 @@ body.underage-page .logo {
   transform: translateX(-50%);
   color: #c8a026;
 }
-/* Home page: remove full viewport height to tighten gap below hero */
-body.home-page .flavor-section { min-height: auto !important; }
-@media (max-width: 768px) {
-  body.home-page .flavor-section { margin-top: -3.2rem !important; } /* Increase negative to tighten gap */
-}
-@media (max-width: 768px) {
-  .background.home-bg.home-scroll, .home-bg { padding-bottom: 10px !important; }
+/* Home page: remove full viewport height and let it flow naturally */
+body.home-page .flavor-section { 
+  min-height: auto !important;
+  margin-top: 1.2rem !important; /* Small breathing space below hero */
 }
 /* Bacca Luce section solid background override */
 .bacca-luce-bg {
@@ -3293,7 +3289,7 @@ body.home-page .flavor-section { min-height: auto !important; }
   }
 
   header {
-    padding: 0.5rem 0;
+    padding: 0.25rem 0 0.15rem 0; /* Reduce vertical padding for tighter logo-can gap */
   }
 
   .bela-logo-container {
@@ -3484,4 +3480,22 @@ header.open .horizontal-menu { position: fixed; top: 0; left: 0; right: 0; z-ind
 }
 @media (max-width: 420px) {
   .faq-accordion .faq-icon-img { width:95px; height:95px; }
+}
+/* Hero wrapper: new flex-based spacing (replaces negative margins) */
+.hero-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: -26px; /* Increased pull to tighten logo→can gap */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(0.06rem, 0.9vh, 0.35rem); /* Slightly smaller vertical rhythm */
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .hero-wrap {
+    gap: clamp(0.04rem, 0.8vh, 0.28rem);
+    margin-top: -32px; /* Further pull on small screens */
+  }
 }
