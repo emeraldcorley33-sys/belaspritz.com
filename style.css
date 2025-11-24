@@ -3466,10 +3466,10 @@ header.open .horizontal-menu { position: fixed; top: 0; left: 0; right: 0; z-ind
   line-height: 1.2;
   text-align: center;
   max-width: 680px;
-  margin: 0.25rem auto 0.4rem auto;
-  color: #333;
+  margin: 0.1rem auto 0.15rem auto;
+  color: #ff6d4d;
   font-family: 'Montserrat', sans-serif;
-  opacity: 0.9;
+  opacity: 0.85;
 }
 @media (max-width:600px){
   .responsible-drinking-disclaimer { font-size: 0.68rem; padding: 0 1rem; }
