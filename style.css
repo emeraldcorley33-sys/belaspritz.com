@@ -1938,10 +1938,11 @@ body.underage-page .logo {
 @media (max-width: 768px) {
   .pop-open-the-party {
     margin-top: -8vw !important;
-    margin-bottom: 0 !important;
+    margin-bottom: 0 !important; /* keep zero */
   }
   .pop-open-the-party h2 {
-    font-size: 4rem !important;
+    font-size: 4.4rem !important; /* Slightly larger for impact */
+    margin: 0 auto 0 auto !important; /* Remove 8px top gap */
   }
 }
 .corsiva-uppercase {
@@ -1990,7 +1991,7 @@ body.underage-page .logo {
 /* Home page: remove full viewport height to tighten gap below hero */
 body.home-page .flavor-section { min-height: auto !important; }
 @media (max-width: 768px) {
-  body.home-page .flavor-section { margin-top: -2rem !important; }
+  body.home-page .flavor-section { margin-top: -3.2rem !important; } /* Increase negative to tighten gap */
 }
 @media (max-width: 768px) {
   .background.home-bg.home-scroll, .home-bg { padding-bottom: 10px !important; }
