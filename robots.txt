@@ -22,4 +22,4 @@ Allow: /style.css
 Disallow: /underage.html
 
 # Sitemap location
-Sitemap: https://belaspritz.com/sitemap.html
+Sitemap: https://belaspritz.com/sitemap.xml
