@@ -2755,7 +2755,28 @@ body.home-page .flavor-section {
   margin-left: 1.5rem;
 }
 .our-story-info-box h2{margin-top:0;margin-bottom:1rem;font-size:2rem;color:#c8a026}
-.our-story-info-box p{color:#c8a026;line-height:1.5;margin-bottom:0}
+.our-story-info-box h3{
+  margin-top:2rem;
+  margin-bottom:0.75rem;
+  font-size:1.4rem;
+  color:#b4214e;
+  font-weight:700;
+  text-align:left;
+}
+.our-story-info-box h3:first-of-type{
+  margin-top:1.5rem;
+}
+.our-story-info-box p{
+  color:#c8a026;
+  line-height:1.6;
+  margin-bottom:1.5rem;
+  text-align:left;
+}
+.our-story-info-box p:last-child{
+  margin-bottom:0;
+  text-align:center;
+  margin-top:2rem;
+}
 
 /* Responsive: stack columns on smaller screens and reduce overlap */
 @media (max-width: 1100px) {
