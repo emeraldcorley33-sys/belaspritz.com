@@ -3543,3 +3543,9 @@ header.open .horizontal-menu { position: fixed; top: 0; left: 0; right: 0; z-ind
     margin-top: -32px; /* Further pull on small screens */
   }
 }
+/* Mobile reinforcement: ensure 21+ note sits beneath button on flavor sections */
+@media (max-width: 640px) {
+  .bacca-luce-buy-now { flex-direction: column !important; align-items: center !important; justify-content: center !important; }
+  .bacca-luce-buy-now .buy-now-button { display:block; width:auto; }
+  .bacca-luce-buy-now .age-purchase-note { display:block; width:100%; text-align:center; margin-top:0.4rem !important; }
+}
