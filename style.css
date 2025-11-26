@@ -2388,7 +2388,7 @@ body.home-page .flavor-section {
 /* Ensure Passione Buy Now button uses correct style even if container class is .bacca-luce-buy-now */
 .passione-bg .bacca-luce-buy-now .buy-now-button {
   background: radial-gradient(circle at 50% 50%, #f461a4 12%, #611c84 88%) !important;
-  color: #ffa98e !important;
+  color: #fb9f11 !important;
   border: none;
   box-shadow: 0 2px 8px rgba(97,28,132,0.15);
   font-weight: 700;
@@ -2510,6 +2510,10 @@ body.home-page .flavor-section {
   padding: 0 0.3rem;
   color: #fb9f11 !important;
 }
+/* Override border color for Passione */
+.passione-bg .bacca-luce-description {
+  border-color: #fb9f11 !important;
+}
 .passione-desc-text {
   display: flex;
   flex-direction: column;
@@ -2563,7 +2567,7 @@ body.home-page .flavor-section {
 }
 .passione-bg .bacca-luce-buy-now .buy-now-button:hover {
   background: radial-gradient(circle at 50% 50%, #611c84 12%, #f461a4 88%) !important;
-  color: #ffa98e !important;
+  color: #fb9f11 !important;
   transform: scale(1.06);
 }
 /* Tangelo section unified with Bacca Luce/Passione layout */
@@ -2593,6 +2597,10 @@ body.home-page .flavor-section {
   color: #f3eac0 !important;
   transform: scale(1.06);
 }
+/* Override border color for Tangelo */
+.tangelo-bg .bacca-luce-description {
+  border-color: #f3eac0 !important;
+}
 /* Saray section unified with Bacca Luce/Passione layout */
 .saray-bg {
   background: #f3eac0 !important;
@@ -2620,6 +2628,10 @@ body.home-page .flavor-section {
   color: #e9b659 !important;
   transform: scale(1.06);
 }
+/* Override border color for Saray */
+.saray-bg .bacca-luce-description {
+  border-color: #c8a026 !important;
+}
 /* Limonchello section unified with others */
 .limonchello-bg {
   background: #ffdf5c !important;
@@ -2646,6 +2658,10 @@ body.home-page .flavor-section {
   background: radial-gradient(circle at 50% 50%, #f2de8c 12%, #ffd700 88%) !important;
   color: #ffd700 !important;
   transform: scale(1.06);
+}
+/* Override border color for Limonchello */
+.limonchello-bg .bacca-luce-description {
+  border-color: #f65e4a !important;
 }
 /* Our Story main section layout */
 .our-story-main-section {
